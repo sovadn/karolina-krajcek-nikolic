@@ -106,6 +106,15 @@ a:hover { color: var(--navy-deep); }
 
 .site-nav a:hover, .brand:hover { color: var(--accent-light); }
 
+.site-nav .language-switch {
+  border: 1px solid #ffffff45;
+  border-radius: .25rem;
+  padding-inline: .7rem;
+  font-weight: 650;
+}
+
+.site-nav .language-switch:hover { border-color: var(--accent-light); }
+
 .site-header a:focus-visible, .hero a:focus-visible { outline-color: var(--accent-light); }
 
 .hero {
@@ -330,6 +339,8 @@ a:hover { color: var(--navy-deep); }
 
 .paper-authors { font-size: 1rem; }
 
+.paper-original-title { margin-block: .35rem; color: var(--muted); font-size: .92rem; }
+
 .source-links {
   display: flex;
   flex-wrap: wrap;
@@ -351,6 +362,37 @@ a:hover { color: var(--navy-deep); }
   color: var(--muted);
   font-size: .95rem;
 }
+
+.citation {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: .28rem;
+  padding: .35rem .85rem;
+  background: var(--paper);
+  font-size: .94rem;
+}
+
+.citation summary { padding-block: .25rem; cursor: pointer; font-weight: 650; }
+
+.citation-text { margin-block: .35rem .7rem; overflow-wrap: anywhere; }
+
+.citation button {
+  min-height: 2.5rem;
+  border: 1px solid var(--link);
+  border-radius: .25rem;
+  padding: .35rem .75rem;
+  background: var(--paper);
+  color: var(--link);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.citation button:hover { background: var(--cream); }
+
+.citation-status { color: var(--muted); font-size: .88rem; }
+
+.citation-status:not(:empty) { margin-block: .35rem; }
 
 .findings { margin-top: 1.5rem; }
 

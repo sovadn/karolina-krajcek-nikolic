@@ -1,0 +1,726 @@
+{
+  "profile": {
+    "intro": "Karolina Krajček Nikolić studies aircraft aerodynamics, flight mechanics, and aircraft performance. Her research draws on operational flight data, wind tunnel measurements, engine tests, and computational simulations.",
+    "areas": [
+      {
+        "title": "Aerodynamics and flight performance",
+        "question": "How can flight measurements and recorded flight data be used to estimate aircraft aerodynamic characteristics and fuel burn?"
+      },
+      {
+        "title": "Aircraft structural fatigue",
+        "question": "How do operating conditions affect estimates of fatigue and the remaining useful life of aircraft components?"
+      },
+      {
+        "title": "Propulsion and unmanned aircraft",
+        "question": "How do alternative fuels affect engine thrust? How does hybrid propulsion affect the range and payload capacity of unmanned aircraft?"
+      },
+      {
+        "title": "Flight control and air traffic",
+        "question": "How can simulation be used to assess aircraft control and safe separation? How can traffic complexity and pilot and controller workload be measured?"
+      },
+      {
+        "title": "Aircraft noise",
+        "question": "How can noise be measured inside the cockpit and around an aircraft, and how can the effect of the approach path on noise near the airport be assessed?"
+      }
+    ],
+    "referenceLabels": [
+      "CroRIS · Karolina Krajček Nikolić profile",
+      "CroRIS · Linked bibliographic records",
+      "ORCID · 0000-0003-1403-428X",
+      "OpenAlex · Karolina Krajček Nikolić",
+      "OpenAlex · Karolina Krajček"
+    ]
+  },
+  "papers": [
+    {
+      "slug": "2026-seeing-complexity-like-a-controller-a-task-based",
+      "title": "Seeing Complexity Like a Controller: A Task-Based, Airspace-Independent Air Traffic Complexity Model",
+      "scope": "An empirical study with 18 air traffic controllers, who rated the complexity of static traffic scenarios. External validation used recordings of operational traffic from the ACC Zagreb West sector.",
+      "findings": [
+        {
+          "question": "How well did the model generalize to airspace outside the training set?",
+          "answer": "Across 28 separate operational scenarios from the ACC Zagreb West sector, the pretrained v6 model achieved a Pearson correlation of r = 0.867 with controllers’ consensus complexity scores and a Spearman rank correlation of ρ = 0.839. Data from that sector were held out of training, calibration and hyperparameter selection.",
+          "locator": "Section IV.D, pp. 11–12, and Figure 18"
+        },
+        {
+          "question": "How did the best-performing model variants compare in cross-validation?",
+          "answer": "For each of 17 variants, the authors repeated 300 random splits of the data into 80% for training and 20% for testing. Models v6 and v11 achieved the highest mean Pearson correlations with controllers’ ratings in this comparison, at r = 0.857 and r = 0.862, respectively.",
+          "locator": "Section IV.A, p. 9, and Figures 9–10"
+        },
+        {
+          "question": "How does the model estimate an individual aircraft’s contribution to traffic complexity?",
+          "answer": "In the example shown, the authors recalculated the predicted complexity after leaving out one aircraft at a time. They used the change in score to rank the aircraft. The model’s additive structure also allowed them to show the contributions of individual controller tasks, such as resolving potential conflicts and coordinating traffic.",
+          "locator": "Section V.A, pp. 12–13, and Table V"
+        }
+      ]
+    },
+    {
+      "slug": "2026-thrust-and-exhaust-gas-temperature-of-a-jj",
+      "title": "Thrust and Exhaust Gas Temperature of a JJ-1400 Microturbojet Fuelled with a Commercial SAF-Containing Jet A-1 and FAME Blends",
+      "scope": "Two exploratory test campaigns used a single JJ-1400 microturbojet. All blends contained 5% turbine oil by volume. The fixed test order limits how confidently differences can be attributed to fuel alone.",
+      "findings": [
+        {
+          "question": "How did JJ-1400 thrust change with commercial Jet A-1 containing sustainable aviation fuel (SAF)?",
+          "answer": "At matched rotational speeds, the estimated thrust differences for blends containing 20–100% of the commercial SAF-containing Jet A-1 ranged from −0.3% to +1.4% relative to reference Jet A-1. The model detected no statistically significant difference in thrust or exhaust gas temperature. The percentages describe the share of the commercial product in each blend. For the renewable component within that product, only the upper limit of 50% by mass was known.",
+          "locator": "Sections 2.2, 3.2 and 3.3, and Table 6"
+        },
+        {
+          "question": "How did 25% and 50% FAME blends change JJ-1400 thrust and exhaust gas temperature?",
+          "answer": "On the test bench, at the same rotational speed, the blend containing 25% FAME by volume produced 5.3% less thrust and an exhaust gas temperature 52 K higher than reference Jet A-1. At 50% FAME, the model estimated 12.5% less thrust and a 72 K increase in temperature. These findings apply to the engine and test conditions studied.",
+          "locator": "Sections 3.2 and 3.3, Table 6, and Figures 3–4"
+        },
+        {
+          "question": "How closely did two reference measurements using the same batch of Jet A-1 agree?",
+          "answer": "Reference thrust measurements from 2024 and 2025 agreed within 0.7% at shared rotational speeds. The similarity model predicted 6–10% lower thrust on the warmer, more humid test day in 2024. This check depends on assumptions about engine inlet conditions because temperature and pressure were not measured there.",
+          "locator": "Sections 3.4 and 4.5, and Tables 4–5"
+        }
+      ]
+    },
+    {
+      "slug": "2026-an-adaptive-six-layer-safety-bubble-for-non",
+      "title": "An Adaptive Six-Layer Safety Bubble for Non-Cooperative UAV Self-Separation",
+      "scope": "Monte Carlo simulations of avoidance maneuvers in the horizontal plane, with one obstacle per scenario. The results depend on the modeled conditions, sensors and maneuvering rules.",
+      "findings": [
+        {
+          "question": "Did the adaptive safety bubble maintain separation in simulated UAV encounters?",
+          "answer": "Across 5,300 simulations covering six encounter geometries, the obstacle’s center of mass never entered the fifth layer of the safety bubble (USB₅). The smallest recorded clearance from that boundary was 35.36 m in a 90° crossing encounter. The one-sided 95% upper bound on the probability of intruding into the bubble was 0.299% for a scenario with 1,000 runs and 0.994% for the scenario with 300 runs. These estimates apply to the scenarios and conditions tested.",
+          "locator": "Sections 5.1, 5.2 and 5.7, Table 4, and Figures 8–9"
+        },
+        {
+          "question": "How much did avoidance maneuvers lengthen the simulated routes?",
+          "answer": "Median route extension by scenario ranged from approximately 15% to 46% compared with the planned straight-line route. The highest median occurred when the aircraft avoided an obstacle that did not change its trajectory. In individual simulations of 30° encounters, the route was up to 8.56 times as long as planned.",
+          "locator": "Section 5.1 and Table 5"
+        },
+        {
+          "question": "How did the adaptive safety bubble compare with a fixed bubble of 152 m radius?",
+          "answer": "Using the same planner and 300 paired simulations per encounter geometry, the fixed bubble recorded 22 breaches of the separation boundary in 30° encounters, compared with zero for the adaptive bubble. The minimum distance between aircraft centers was 11.32 m with the fixed bubble and 61.54 m with the adaptive one. The comparison applies to the chosen fixed radius and the same avoidance algorithm.",
+          "locator": "Section 5.6 and Table 7"
+        }
+      ]
+    },
+    {
+      "slug": "2026-perceived-workload-in-mixed-ifr-vfr-terminal-operations",
+      "title": "Perceived Workload in Mixed IFR/VFR Terminal Operations: An Exploratory Pilot Simulator Study in Zagreb TMA",
+      "scope": "An exploratory simulator study with nine air traffic controller trainees. The fixed scenario order, simulated radio communication difficulties and small sample limit causal interpretation.",
+      "findings": [
+        {
+          "question": "How did perceived workload differ between mixed IFR/VFR traffic and a comparable IFR-only scenario?",
+          "answer": "In the Zagreb approach airspace simulator, the nine trainees gave the mixed scenario an average weighted NASA-TLX workload score 9.26 points higher than the comparable IFR-only scenario. The 95% confidence interval was −1.33 to 19.85 points, with a two-sided p = 0.079. Seven of the nine trainees reported higher workload. This is an exploratory finding, and the mixed scenario combined differences in flight rules and communications.",
+          "locator": "Sections 4.3 and 5.1, Tables 10 and 12, and Figure 5A"
+        },
+        {
+          "question": "Which workload dimensions were more pronounced in the mixed IFR/VFR scenario?",
+          "answer": "For the same nine trainees, frustration was 21.67 points higher and effort 15.00 points higher than in the IFR-only scenario. These were the only two of the six NASA-TLX subscales with Holm-adjusted p < 0.05, with p = 0.012 for frustration and p = 0.043 for effort. The authors treat these estimates as exploratory because of the small sample and scenario order.",
+          "locator": "Section 4.5, Table 11, and Figure 6"
+        },
+        {
+          "question": "Was higher traffic density associated with higher workload across the two IFR-only scenarios?",
+          "answer": "The two IFR-only scenarios differed by two aircraft. The difference in mean weighted NASA-TLX scores (lower minus higher traffic density) was −0.63 points, with a 95% interval from −12.37 to 11.11. Both scenarios followed the mixed scenario, so the comparison is descriptive.",
+          "locator": "Sections 4.4 and 5.1, and Table 10"
+        }
+      ]
+    },
+    {
+      "slug": "2026-mission-level-endurance-and-payload-benefits-of-a",
+      "title": "Mission-Level Endurance and Payload Benefits of a Series-Hybrid Multirotor UAV",
+      "scope": "A reference three-dimensional mission simulated in MATLAB. The model held aircraft mass constant despite fuel consumption and represented payload through a specified electrical demand. The public proceedings number the paper’s pages 2508–2513.",
+      "findings": [
+        {
+          "question": "How did the series-hybrid multirotor’s range and endurance compare with the electric versions?",
+          "answer": "On the same simulated 3D route, the 15 kg series hybrid with a 400 Wh battery covered 60.2 km in 148 min. The electric version of the same mass with a 2,600 Wh battery covered 26.5 km in 59 min, and the 5 kg electric version covered 14.4 km in 32 min. In this model, the hybrid therefore achieved about 2.3 times the range of the electric version of the same mass.",
+          "locator": "Section VII.A and Table II (public proceedings, p. 2512)"
+        },
+        {
+          "question": "What maximum sustainable payload did the simulation estimate for the series-hybrid multirotor?",
+          "answer": "The model estimated 8 kg as the hybrid’s maximum sustainable payload under standard energy management rules and with planned reserves, with a brief boost mode allowing up to 10 kg. The estimated payload limits of the electric versions were 2 kg for the 5 kg platform and 7 kg for the 15 kg platform. These are preliminary design estimates that require confirmation in flight tests.",
+          "locator": "Sections VI.B and VII.C, and Figure 4 (public proceedings, pp. 2511–2513)"
+        },
+        {
+          "question": "How did a battery rated at 400 Wh deliver 465 Wh over the simulated hybrid mission?",
+          "answer": "For the simulated hybrid mission, the table reports 2.80 L of fuel consumed and 465 Wh of cumulative energy supplied by the battery. The generator recharged the battery in flight, and the battery met peak loads. The 465 Wh figure sums all battery discharges over the mission.",
+          "locator": "Sections VII.A and VII.B, Table II, and Figure 3 (public proceedings, p. 2512)"
+        }
+      ]
+    },
+    {
+      "slug": "2025-quantifying-operational-uncertainty-in-landing-gear-fatigue-a",
+      "title": "Quantifying Operational Uncertainty in Landing Gear Fatigue: A Hybrid Physics–Data Framework for Probabilistic Remaining Useful Life Estimation of the Cessna 172 Main Gear",
+      "scope": "Mass and balance data from 174 flights by three Cessna 172 aircraft in a single training fleet. The fatigue estimates come from a numerical model and were not directly validated against in-service inspection or failure records.",
+      "findings": [
+        {
+          "question": "Which part of the mass distribution had the greatest effect on estimated main landing gear leg fatigue?",
+          "answer": "For the training profile studied, front-seat mass had the highest Borgonovo sensitivity index for estimated damage increments (Δ = 0.502), ahead of fuel mass (0.212) and rear-seat mass (0.199). This ranking depends on the load distribution in the fleet studied.",
+          "locator": "Section 3.4, Table 6, and Figure 4"
+        },
+        {
+          "question": "What service life was estimated for the main landing gear leg in the Cessna 172 fleet studied?",
+          "answer": "A Monte Carlo analysis based on the load distribution from 174 training flights estimated a mean service life of about 410,000 cycles (95% confidence interval, 300,000 to 530,000). Estimates for the extreme loading cases analyzed ranged from about 90,000 to more than 2 million cycles.",
+          "locator": "Sections 4.2 and 4.4, and the Conclusion"
+        },
+        {
+          "question": "How closely did the simplified model reproduce the numerical estimates of damage increments?",
+          "answer": "A quadratic ridge regression model trained on 141 finite-element simulation cases achieved R² = 0.991 ± 0.013 in five-fold cross-validation. This metric describes agreement with the numerical model within the range of loads tested.",
+          "locator": "Sections 2.2, 3.2 and 4.4"
+        }
+      ]
+    },
+    {
+      "slug": "2025-low-cost-strain-gauge-force-sensing-sidestick-for",
+      "title": "Low-Cost Strain-Gauge Force-Sensing Sidestick for 6-DoF Flight Simulation: Design and Human-in-the-Loop Evaluation",
+      "scope": "A simulation experiment with 16 participants. Each completed a single 155-second, single-axis task tracking a target pitch angle in a six-degrees-of-freedom flight simulator.",
+      "findings": [
+        {
+          "question": "How much did the force-sensing sidestick components cost?",
+          "answer": "Components for the prototype, which used four strain-gauge load cells, cost approximately €108. The cost estimate excludes the Thrustmaster Warthog grip the team already had.",
+          "locator": "Sections 2.1 and 2.2, and Table 2"
+        },
+        {
+          "question": "How was the frequency of force corrections associated with pitch tracking accuracy?",
+          "answer": "Among 16 participants, more local maxima and minima in sidestick force were associated with lower tracking-error variance (r = −0.68, p = 0.004). Comparing the two extreme results, error variance was 0.96 deg² with frequent small corrections and 5.04 deg² with less frequent, larger corrections.",
+          "locator": "Sections 3.1 and 4.1, Figure 11, and Table 4"
+        },
+        {
+          "question": "How were subjective ratings of handling qualities and effort associated with tracking error?",
+          "answer": "In this experiment, Cooper–Harper handling-qualities ratings correlated with tracking-error variance (r = 0.87, p < 0.001). The estimated correlation for the NASA-TLX effort rating was weaker (r = 0.17, p = 0.52).",
+          "locator": "Sections 3.2 and 4.2, and Figures 14 and 15"
+        },
+        {
+          "question": "Did the experiment detect a difference in tracking precision between pilots and other participants?",
+          "answer": "A two-sample test comparing tracking-error variance gave p = 0.37. The estimated standardized difference was Cohen’s d ≈ −0.48 (95% interval, −1.74 to 0.51), with statistical power of about 0.44. The sample was small, and experience varied among the pilots.",
+          "locator": "Sections 3.3, 4.3 and 4.6"
+        }
+      ]
+    },
+    {
+      "slug": "2024-fuel-burn-method-assessment-using-automatic-dependent-surveillancebroadcast",
+      "title": "Fuel Burn Method Assessment Using Automatic Dependent Surveillance–Broadcast and European Reanalysis Data: Limited Flight Sample Analysis",
+      "scope": "Five flights of a single Airbus A320-family commercial aircraft. The direct comparison covers flight intervals with both ADS-B and flight data recorder (FDR) data, with the aircraft mass at the start of the analyzed trajectory known.",
+      "findings": [
+        {
+          "question": "How accurately can ADS-B and ERA5 data estimate aircraft fuel burn?",
+          "answer": "Across five flights of a single aircraft, combining ADS-B data, ERA5 weather data, and the BADA 3 model yielded a mean absolute fuel burn error of 1.2% relative to FDR measurements. The largest error was 3.3%. The comparison applies to flight intervals covered by both ADS-B and FDR records.",
+          "locator": "Sections 3.8 and 4.5, Table 6 and Figure 13a"
+        },
+        {
+          "question": "During which flight phase was the fuel burn estimate least accurate?",
+          "answer": "On three approaches with available ADS-B data, the model underestimated fuel burn by 38.0–53.5%. In the initial climb, it overestimated fuel burn by up to 17.2%. Errors in the two phases partially offset each other when fuel burn was summed along the trajectory.",
+          "locator": "Section 4.5, Table 6 and Figure 14"
+        },
+        {
+          "question": "How much do ERA5 wind data improve estimates of true airspeed?",
+          "answer": "The largest mean error in estimated true airspeed (TAS) relative to FDR data was 8.6 m/s when ground speed was used as the estimate. With ERA5 wind data included, the largest mean error was 1.0 m/s.",
+          "locator": "Section 4.5 and Figure 12"
+        },
+        {
+          "question": "How sensitive are fuel burn estimates to the initial aircraft mass?",
+          "answer": "In a sensitivity analysis of the trajectories studied, a 10% deviation in initial mass led to an error of up to 6% in the estimated total fuel burn. With a 20% deviation in mass, the fuel burn error reached 10%.",
+          "locator": "Section 4.3 and Figure 9"
+        }
+      ]
+    },
+    {
+      "slug": "2024-startle-effect-analysis-based-on-multimodal-physiological-features",
+      "title": "Startle Effect Analysis Based on Multimodal Physiological Features in a Fighter Aircraft Simulator",
+      "scope": "The publicly available abstract describes the methodology. It gives neither effect sizes nor results for the individual comparisons.",
+      "findings": [
+        {
+          "question": "How did the simulator study test pilots’ responses to a sudden stimulus?",
+          "answer": "The authors described a pitch-angle tracking task in a six-degree-of-freedom simulator. The sudden stimulus combined a gust-induced change in airspeed with the sound of thunder played through headphones. After the stimulus, the pilot had to report specified flight parameters to air traffic control.",
+          "locator": "Conference abstract No. 224, simulation scenario"
+        },
+        {
+          "question": "Which measures captured pilot performance, workload, and physiological response?",
+          "answer": "The objective performance measure was based on the variance of the pitch-angle tracking error in segments with and without the stimulus. Subjective assessments included the NASA-TLX and the Cooper–Harper scale. Physiological features were derived from electrocardiography, respiration, electrodermal activity, and electromyography of the orbicularis oculi muscle.",
+          "locator": "Conference abstract No. 224, measures"
+        }
+      ]
+    },
+    {
+      "slug": "2023-predicting-the-remaining-useful-life-of-light-aircraft",
+      "title": "Predicting the Remaining Useful Life of Light Aircraft Structural Parts: An Expert System Approach",
+      "scope": "Case study of a Cessna 172R main landing gear leg. The estimates come from numerical analysis and assume linear accumulation of fatigue damage.",
+      "findings": [
+        {
+          "question": "How can operational records be used to estimate the remaining useful life of an aircraft structural component?",
+          "answer": "The proposed expert system combines records of mass and load distribution with fatigue life estimates calculated for individual operating phases using finite element analysis. It calculates cumulative damage with the linear Palmgren–Miner rule. An explanation module connects the estimate to the existing maintenance program.",
+          "locator": "Sections 3.1–3.4, Table 2 and Figure 4"
+        },
+        {
+          "question": "How much did the numerical estimates of landing gear leg life differ between two extreme scenarios?",
+          "answer": "For repeated loading in a light-load post-landing taxi scenario, the model estimated about 21.23 million cycles to fatigue failure. For loading in a heavy-load landing scenario, it estimated about 122,700 cycles. The ratio of about 173 applies to these two selected scenarios, which differ in operating phase and mass distribution.",
+          "locator": "Section 4, Figures 6 and 7"
+        },
+        {
+          "question": "Where did the model identify the shortest estimated life on the main landing gear leg?",
+          "answer": "In the numerical analysis, the area with the shortest estimated life was near the fixed attachment between the landing gear leg and the fuselage. In the heavy-load landing scenario, this area coincided with the peak von Mises stress concentration.",
+          "locator": "Section 4, Figures 6–8"
+        }
+      ]
+    },
+    {
+      "slug": "2022-modelling-piston-engine-aircraft-performance-using-pilot-s",
+      "title": "Modelling piston engine aircraft performance using pilot's operating handbook",
+      "scope": "A model for general aviation aircraft with naturally aspirated piston engines in a clean configuration. The comparisons use handbook data.",
+      "findings": [
+        {
+          "question": "How well does a handbook-based model reproduce Cessna C182 climb and cruise performance?",
+          "answer": "In the example shown, the Cessna C182 model reproduced data from the pilot’s operating handbook with coefficients of determination of R² = 0.997 for climb and R² = 0.991 for cruise. These values describe agreement with the handbook data.",
+          "locator": "Section 3, Figures 4 and 5, pp. 179–181"
+        },
+        {
+          "question": "How well does the model reproduce the power of a naturally aspirated piston engine as altitude changes?",
+          "answer": "For the Lycoming IO-540-AB1A5 engine in the Cessna C182, the model achieved R² = 0.999 against the manufacturer’s handbook data. The comparison covers standard and non-standard atmospheric conditions.",
+          "locator": "Section 3, Figure 1, pp. 178–179"
+        },
+        {
+          "question": "How does the model represent a climb at reduced power?",
+          "answer": "The model calculates thrust for the selected power setting, so it can also simulate a reduced-power climb in a clean configuration. The authors compared the model with handbook data for several aircraft types, including the Cessna C172, Piper PA28, and Cirrus SR22. The conclusion identifies forced-induction engines and non-clean configurations as future extensions.",
+          "locator": "Section 4, pp. 181–182"
+        }
+      ]
+    },
+    {
+      "slug": "2022-modeling-the-effect-of-one-engine-inoperative-for",
+      "title": "Modeling the Effect of One Engine Inoperative for Bada Flight Performance Model",
+      "scope": "A model of the Dash 8 Q400 regional twin-engine turboprop in a clean configuration, based on aircraft handbook data. In the official MIPRO PDF, the paper appears on pp. 1744–1749. The IEEE record lists pp. 1526–1531.",
+      "findings": [
+        {
+          "question": "How does one inoperative engine affect modeled cruise drag on the Dash 8 Q400?",
+          "answer": "In the clean-configuration calculation, the cruise parasite drag coefficient rose from 0.0298 with both engines operating to 0.0321 with one engine inoperative. The maximum modeled lift-to-drag ratio decreased from about 15 to 13.",
+          "locator": "Section IV, Figures 1 and 2 and Table 2, pp. 1747–1748 in the MIPRO PDF"
+        },
+        {
+          "question": "What was the difference in climb rate after engine failure in one example studied?",
+          "answer": "For a mass of 29 metric tonnes, standard atmospheric conditions, and an altitude of 11,000 feet, the authors obtained a climb rate of about 2,000 feet per minute with both engines operating and about 500 feet per minute with one engine inoperative, using operating handbook data.",
+          "locator": "Section IV, Figure 4, p. 1748 in the MIPRO PDF"
+        },
+        {
+          "question": "What data limitations affected modeling of flight with one engine inoperative?",
+          "answer": "Climb and descent times in the handbook were rounded to the nearest minute. For drift-down after engine failure, the handbook did not cover all combinations of mass and temperature studied. The authors therefore reported no results for drift-down.",
+          "locator": "Sections IV and V, pp. 1748–1749 in the MIPRO PDF"
+        }
+      ]
+    },
+    {
+      "slug": "2022-cfd-analysis-of-f-16-wing-airfoil-aerodynamics",
+      "title": "CFD Analysis of F-16 Wing Airfoil Aerodynamics in Supersonic Flow",
+      "scope": "The conference took place in 2021 and the chapter was published in 2022. The results summarized here come from the numerical comparison of airfoil configurations described in the publisher’s abstract.",
+      "findings": [
+        {
+          "question": "How did the authors compare airfoil configurations in supersonic flow?",
+          "answer": "The authors studied the aerodynamics of the NACA 64A-204 airfoil by numerically simulating compressible turbulent flow. They used the Reynolds-averaged Navier–Stokes (RANS) equations and the k–ω SST turbulence model.",
+          "locator": "Springer abstract"
+        },
+        {
+          "question": "How did changing the airfoil geometry affect the maximum lift-to-drag ratio in the simulation?",
+          "answer": "Under the same simulated supersonic conditions, the maximum ratio of lift coefficient to drag coefficient (CL/CD) was 6.9 for the geometry intended for subsonic operation and 7.1 for the geometry intended for supersonic operation. These values come from CFD simulations of the two airfoil configurations.",
+          "locator": "Springer abstract"
+        }
+      ]
+    },
+    {
+      "slug": "2018-estimation-of-aerodynamic-coefficients-in-a-small-subsonic",
+      "title": "Estimation of Aerodynamic Coefficients in a Small Subsonic Wind Tunnel",
+      "scope": "Estimated corrections for a 1:100-scale model of the Dash 8 Q400 regional aircraft in the small AT-1 subsonic wind tunnel.",
+      "findings": [
+        {
+          "question": "Which correction matters most when extrapolating the axial force coefficient from a wind tunnel model to full-scale flight?",
+          "answer": "For the 1:100-scale Dash 8 Q400 model in the AT-1 wind tunnel, the largest estimated correction to the axial force coefficient came from the difference in Reynolds numbers. In the test setup, the effect of the measurement configuration on the correction was about one-sixth as large.",
+          "locator": "Sections 3.3 and 4, pp. 462–463"
+        },
+        {
+          "question": "What was the estimated total correction to the Dash 8 Q400 axial force coefficient?",
+          "answer": "The estimated in-flight axial force coefficient was 62 drag counts lower than the wind tunnel model value. The conclusion reports a total correction of 27%, assuming an in-flight axial force coefficient of approximately 0.0230.",
+          "locator": "Sections 3.4 and 4, pp. 462–463"
+        },
+        {
+          "question": "Was the correction to the normal force coefficient slope as large in the same setup?",
+          "answer": "The estimated correction to the normal force coefficient slope was 0.44%. The authors inferred that the correction to the pitching moment coefficient would also be small under those conditions.",
+          "locator": "Sections 3.5 and 4, pp. 462–463"
+        }
+      ]
+    },
+    {
+      "slug": "2017-system-for-acquisition-and-processing-of-pressure-data",
+      "title": "System for acquisition and processing of pressure data around body in airflow",
+      "scope": "",
+      "findings": [
+        {
+          "question": "How did the authors measure the pressure distribution around the NACA 2421 airfoil?",
+          "answer": "The authors took measurements in the enclosed AT-1 subsonic wind tunnel. They used an Intelligent Pressure Scanner 9016 to record the pressure distribution around the NACA 2421 airfoil, transmitted the digitized data over Ethernet, and processed them in NUSS and LabVIEW.",
+          "locator": "Abstract in the CroRIS record"
+        },
+        {
+          "question": "Which measurement method did the authors compare with the electronic scanner?",
+          "answer": "The authors compared the electronic measurements with readings from a piezometric harp, an array of piezometers. The abstract confirms that the comparison was carried out and gives no numerical difference between the methods.",
+          "locator": "Abstract in the CroRIS record"
+        }
+      ]
+    },
+    {
+      "slug": "2017-development-of-research-capacities-in-the-field-of",
+      "title": "Development of Research Capacities in the Field of Applied Aerodynamics",
+      "scope": "",
+      "findings": [
+        {
+          "question": "How was the Aerodynamics Laboratory at the Faculty of Transport and Traffic Sciences established?",
+          "answer": "According to the report, work to establish the laboratory began in 1997 as a collaboration between the Faculty of Transport and Traffic Sciences (FPZ) and the Faculty of Mechanical Engineering and Naval Architecture. The wind tunnel was initially housed in an FPZ hangar in Lučko and was also used for teaching at both faculties.",
+          "locator": "Abstract in the CroRIS record"
+        },
+        {
+          "question": "What was the focus of the AT-1 wind tunnel upgrade project?",
+          "answer": "The project focused on developing measurement systems, improving existing equipment, and acquiring new equipment. The abstract describes the development of research capabilities and provides no quantitative estimate of improvements in measurement performance.",
+          "locator": "Abstract in the CroRIS record"
+        }
+      ]
+    },
+    {
+      "slug": "2017-distributed-flight-control-system-simulator-for-aircraft-autostabilization",
+      "title": "Distributed Flight Control System Simulator for Aircraft Autostabilization",
+      "scope": "This technical report describes and summarizes separate papers presented at MIPRO in 2015 and 2016.",
+      "findings": [
+        {
+          "question": "How was the simulator with physical control units designed to work?",
+          "answer": "A model of the aircraft, atmosphere, engine, sensors, and actuators runs in real time in MATLAB/Simulink. The physical control units are linked through a real communication network, and their commands are fed back to the simulated aircraft.",
+          "locator": "Section 3.3 and Figure 5"
+        },
+        {
+          "question": "What had the project completed, and what testing was still planned?",
+          "answer": "The project prepared the equipment for hardware-in-the-loop (HIL) simulation. Development of the control software and comparison of the distributed and centralized architectures were left for future work.",
+          "locator": "Sections 3.3 and 6"
+        }
+      ]
+    },
+    {
+      "slug": "2016-a-proposal-for-a-fully-distributed-flight-control",
+      "title": "A Proposal for a Fully Distributed Flight Control System Design",
+      "scope": "A proposed architecture and simulator requirements.",
+      "findings": [
+        {
+          "question": "How does the proposed architecture distribute flight control?",
+          "answer": "In the proposed fully distributed system, independent units located near the control surface actuators jointly execute the control logic. The paper discusses how to network these units, provide redundancy, and transfer control functions in the event of a failure.",
+          "locator": "Sections III–IV"
+        },
+        {
+          "question": "How did the authors propose testing this architecture?",
+          "answer": "They proposed a simulator that places physical control units and a real communication network in a loop with a real-time flight model. The paper defines the simulator requirements and outlines the planned comparison with a centralized system.",
+          "locator": "Sections V–VI"
+        }
+      ]
+    },
+    {
+      "slug": "2015-aircraft-performance-monitoring-from-flight-data",
+      "title": "Aircraft performance monitoring from flight data",
+      "scope": "A review of methods and a research proposal. A separate paper with the same title and two authors appeared in the KoREMA 2014 proceedings.",
+      "findings": [
+        {
+          "question": "What can aircraft performance monitoring methods measure during steady cruise?",
+          "answer": "The methods described in the paper compare cruise fuel consumption data with theoretical values or a measured baseline to determine deviations in specific range. The authors explain that accurately attributing those deviations to changes in the airframe or engine depends on how well actual thrust is known.",
+          "locator": "Sections 3 and 5 and Figures 3–4"
+        },
+        {
+          "question": "How does thrust estimation error affect drag estimates?",
+          "answer": "In the procedure presented, error in the estimate of actual thrust carries over into the aerodynamic drag calculation. The authors note that a deviation in N₁ engine speed or engine pressure ratio (EPR) may reflect a change in how those indicators relate to thrust.",
+          "locator": "Section 3.1, especially pp. 1340–1342"
+        },
+        {
+          "question": "How did the authors propose estimating aerodynamic coefficients from routine flight data?",
+          "answer": "The authors proposed simulating a rigid transport aircraft in steady flight and estimating its aerodynamic coefficients from input and output data. The research plan calls for comparing the simulation with data from a quick access recorder (QAR).",
+          "locator": "Sections 4 and 5"
+        }
+      ]
+    },
+    {
+      "slug": "2015-technologies-for-distributed-flight-control-systems-a-review",
+      "title": "Technologies for distributed flight control systems: A review",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Which applications of distributed flight control does the review cover?",
+          "answer": "The review of publicly available scientific and technical literature illustrates the technologies with examples such as swarms of small uncrewed aircraft and distributed networks for fault detection and isolation.",
+          "locator": "Abstract in the CroRIS record"
+        },
+        {
+          "question": "Which other aircraft systems are discussed in connection with distributed functions?",
+          "answer": "The conference abstract lists distributed sensor networks, structural health monitoring, and fault-tolerant flight control systems. These examples describe the scope of the literature review.",
+          "locator": "MIPRO 2015 conference abstract"
+        }
+      ]
+    },
+    {
+      "slug": "2015-hrvatsko-zrakoplovno-nazivlje",
+      "title": "Croatian Aeronautical Terminology",
+      "scope": "A reference dictionary whose entries can be cited for terminology and definitions.",
+      "findings": [
+        {
+          "question": "Where can readers find Croatian aeronautical terms, definitions, and their English equivalents?",
+          "answer": "The dictionary brings together material from a project to organize and standardize Croatian aeronautical terminology. Its entries provide definitions, English equivalents, and, where appropriate, accepted or proposed terms.",
+          "locator": "Introductory note and entries on pp. 7–8"
+        },
+        {
+          "question": "How does the dictionary distinguish the meanings of the English term aerodynamic balance?",
+          "answer": "The dictionary gives the Croatian term aerodinamička vaga for an instrument used to measure forces and moments in experimental aerodynamics. It gives the same English equivalent for aerodinamička kompenzacija, an entry concerning the reduction of control-surface hinge moment and the force required at the flight control.",
+          "locator": "Page 7, entries for aerodinamička vaga and aerodinamička kompenzacija"
+        }
+      ]
+    },
+    {
+      "slug": "2015-zbirka-rijesenih-zadataka-iz-teorije-leta-i",
+      "title": "Worked Problems in Flight Theory I",
+      "scope": "Teaching material. The descriptions cover its subject matter and intended use.",
+      "findings": [
+        {
+          "question": "Where can I find worked aerodynamics problems for introductory aeronautics courses?",
+          "answer": "Designed for first-year students, the collection starts with basic fluid state variables, fluid mechanics, and the standard atmosphere before moving on to airfoils, wings, and viscous flow. It also includes problems on high-speed flow, propellers, and aerodynamic similarity.",
+          "locator": "Preface and contents, p. i"
+        },
+        {
+          "question": "Which tables and formulas accompany the problems?",
+          "answer": "The appendices provide a standard atmosphere table and a list of formulas intended for use in the written portion of the Flight Theory I examination.",
+          "locator": "Appendices A and B, pp. 134–135"
+        }
+      ]
+    },
+    {
+      "slug": "2015-zbirka-rijesenih-zadataka-iz-teorije-leta-ii",
+      "title": "Worked Problems in Flight Theory II",
+      "scope": "Teaching material. The descriptions cover its subject matter and intended use.",
+      "findings": [
+        {
+          "question": "Which aircraft performance calculations does the collection cover?",
+          "answer": "The second-year collection covers level flight, climb and descent, range and endurance, takeoff, landing, and turns. Separate chapters cover total energy, longitudinal stability, and controllability.",
+          "locator": "Chapters 4–11, pp. 41–124"
+        },
+        {
+          "question": "How does the collection connect mechanics with flight calculations?",
+          "answer": "The first three chapters provide worked examples in kinematics, dynamics, and mechanism theory. The appendices include data on the Cessna Skylane and Cessna Citation 3, a standard atmosphere table, and a list of formulas.",
+          "locator": "Preface, Chapters 1–3, and appendices, pp. 125–129"
+        }
+      ]
+    },
+    {
+      "slug": "2014-synthesis-of-simple-aircraft-performance-model-with-flight",
+      "title": "Synthesis of Simple Aircraft Performance Model with Flight Gear Pilot Interface",
+      "scope": "",
+      "findings": [
+        {
+          "question": "How did the authors connect a simplified flight model to a pilot interface?",
+          "answer": "The authors linked a modified point-mass performance model implemented in MATLAB/Simulink to FlightGear. Simulink models the motion, while FlightGear provides the pilot with a visual reference and cockpit interface.",
+          "locator": "Sections 1 and 2 and Figures 1–2"
+        },
+        {
+          "question": "Which inputs determine the motion, and what is the model intended for?",
+          "answer": "The model describes motion in the vertical plane. Its inputs are elevator deflection, roll angle, and throttle position. The authors identify education and preliminary analyses as the model's main uses.",
+          "locator": "Abstract and Sections 1 and 4"
+        },
+        {
+          "question": "How did the model behave in simulated flight with the control surfaces held fixed?",
+          "answer": "At approximately 60% of maximum available power, with the control surfaces in the neutral position, simulated airspeed and angle of attack stabilized after approximately two minutes. The authors based the model on data for the Piper Cherokee PA-28-180 and presented two preliminary simulations.",
+          "locator": "Sections 3 and 4, Figure 6"
+        }
+      ]
+    },
+    {
+      "slug": "2014-method-for-aerodynamic-characteristics-monitoring-of-transport-aircraft",
+      "title": "Method for Aerodynamic Characteristics Monitoring of Transport Aircraft in Operation",
+      "scope": "This separate conference paper, co-authored with Ivana Varešak, describes the research plan.",
+      "findings": [
+        {
+          "question": "How did the authors propose monitoring aerodynamic characteristics from routine commercial flights?",
+          "answer": "The AEROQAR research framework proposes estimating aerodynamic coefficient gradients from records of standard flight profiles. The plan is to use data from routine phases of flight without specially designed test maneuvers.",
+          "locator": "Introduction, Section 3.1, and Figure 1"
+        },
+        {
+          "question": "What components were planned to test the procedure?",
+          "answer": "The plan calls for a six-degree-of-freedom motion model, autopilot and sensor models, signal preprocessing and filtering, and parameter estimation. The validation plan includes simulated data with realistic measurement errors under steady wind and turbulence conditions.",
+          "locator": "Sections 3.1, 3.2, and 5"
+        }
+      ]
+    },
+    {
+      "slug": "2014-metoda-za-pracenje-aerodinamickih-znacajki-transportnog-zrakoplova-tijekom",
+      "title": "Method for Monitoring the Aerodynamic Characteristics of a Transport Aircraft in Service",
+      "scope": "This is a separate dissertation in the same line of research as the conference paper with a similar English title. The ResearchGate DOI identifies the dissertation record.",
+      "findings": [
+        {
+          "question": "How was AEROQAR evaluated in the doctoral dissertation?",
+          "answer": "The author evaluated AEROQAR using six-degree-of-freedom simulations of rigid-body aircraft motion in MATLAB. Noise and errors characteristic of real sensors were added to the simulated data, and the tests examined conditions with steady horizontal wind and atmospheric turbulence.",
+          "locator": "Dissertation abstract in the university's volume of doctoral graduates"
+        },
+        {
+          "question": "What did the estimation of aerodynamic coefficient gradients show?",
+          "answer": "In simulation tests with added measurement errors, the author reports satisfactory accuracy and precision in the estimated gradients when the data are filtered with a linear Kalman filter. The abstract reports simulation results without a numerical estimate of the error.",
+          "locator": "Croatian university abstract and the author's English abstract"
+        }
+      ]
+    },
+    {
+      "slug": "2014-pracenje-stvarnih-performansi-zrakoplova-prema-podacima-iz-leta",
+      "title": "Monitoring Actual Aircraft Performance Using Flight Data",
+      "scope": "This separate two-author proceedings entry has the same Croatian title as the 2015 article in Tehnički vjesnik.",
+      "findings": [
+        {
+          "question": "Why do the authors propose monitoring actual performance during aircraft service?",
+          "answer": "The abstract links potential deviations from handbook performance values to changes in the aircraft's physical properties as materials age and the aircraft is subjected to high loads in flight at high subsonic Mach numbers.",
+          "locator": "Author abstract in the CroRIS record"
+        },
+        {
+          "question": "What does the conference paper cover?",
+          "answer": "The paper reviews existing aircraft performance monitoring methods and identifies research opportunities for estimating physical parameters of in-service aircraft from flight data.",
+          "locator": "Author abstract in the CroRIS record"
+        }
+      ]
+    },
+    {
+      "slug": "2014-usporedba-stvarnih-karakteristika-performansi-zrakoplova-sa-objavljenim-podacima",
+      "title": "Comparison of Actual Aircraft Performance with Published Data",
+      "scope": "",
+      "findings": [
+        {
+          "question": "How did the authors compare the Piper Seminole's actual and nominal performance?",
+          "answer": "The authors determined the actual performance of a Piper Seminole PA-44-180 by testing steady cruise with the Speed Power method. They compared the results with nominal values in the aircraft flight manual.",
+          "locator": "Author abstract in the CroRIS record"
+        },
+        {
+          "question": "How did the authors estimate engine characteristics without specialized measuring equipment?",
+          "answer": "The authors used a model fitted by multiple regression to manufacturer data to estimate engine operating characteristics from flight-test records. According to the abstract, the procedure required neither specialized equipment nor automatic data recording.",
+          "locator": "Author abstract in the CroRIS record"
+        }
+      ]
+    },
+    {
+      "slug": "2014-prakticna-primjena-metode-za-odredivanje-performansi-zrakoplova-u",
+      "title": "Practical Application of a Method for Determining Aircraft Climb Performance",
+      "scope": "",
+      "findings": [
+        {
+          "question": "How was the climb performance of the Cessna 172N measured?",
+          "answer": "The authors flight-tested a Cessna 172N using the sawtooth climb method at pressure altitudes of 2,000, 4,000, and 8,000 feet. At each altitude, they tested indicated airspeeds from 50 to 65 knots.",
+          "locator": "Authors’ abstract in the CroRIS record"
+        },
+        {
+          "question": "How were the flight-test measurements compared with the operating handbook?",
+          "answer": "The measured maximum rates of climb were corrected to standard atmospheric conditions and standard aircraft mass, then compared with the values in the pilot’s operating handbook (POH). The abstract does not quantify the differences.",
+          "locator": "Authors’ abstract in the CroRIS record"
+        }
+      ]
+    },
+    {
+      "slug": "2012-comparative-interior-noise-measurement-in-a-large-transport",
+      "title": "Comparative Interior Noise Measurement in a Large Transport Aircraft – Turboprop vs. Turbofans",
+      "scope": "The study compares cockpit noise measured in individual Airbus A319 and Dash 8 Q400 aircraft under eight operating conditions.",
+      "findings": [
+        {
+          "question": "How did average cockpit noise differ between the A319 and the Dash 8 Q400?",
+          "answer": "The A-weighted equivalent sound level (Lₑq) in the tested A319 was at least as high as in the Q400 under seven of the eight observed conditions. The largest difference, about 11 dB, occurred on the apron with the main engines shut down and the auxiliary power unit (APU) running. In the last condition (roll-off), the Q400 was about 1 dB louder.",
+          "locator": "Section 3.3, Figure 7"
+        },
+        {
+          "question": "When was the difference in peak noise greatest?",
+          "answer": "During climb, the maximum A-weighted sound pressure level (Lₘₐₓ) in the tested A319 was about 15 dB higher than in the Q400. During approach descent with the landing gear extended, the difference was about 0.1 dB.",
+          "locator": "Section 3.3, Figure 8"
+        },
+        {
+          "question": "Which part of the frequency spectrum dominated in the two aircraft tested?",
+          "answer": "Octave-band analysis showed that low-frequency noise dominated in both cockpits. For the Q400, the authors identify the octave bands centered at 63 and 125 Hz as likely to contain prominent tones.",
+          "locator": "Section 3.3, Figures 14–21"
+        }
+      ]
+    },
+    {
+      "slug": "2012-exterior-noise-analysis-of-a-small-training-aircraft",
+      "title": "Exterior Noise Analysis of a Small Training Aircraft",
+      "scope": "Ground measurements of exterior noise from a Diamond DV20 Katana training aircraft in Varaždin in August 2012, taken in eight directions at three engine power settings.",
+      "findings": [
+        {
+          "question": "What exterior noise levels were measured around the Diamond DV20 Katana training aircraft?",
+          "answer": "On the ground, A-weighted noise levels were 73.8–84.3 dBA at idle, 92.8–102.8 dBA at cruise power, and 94.7–106.5 dBA at maximum takeoff power. Each range represents measurements in different directions around the same aircraft.",
+          "locator": "Paper AIR-08 in the proceedings, Section 3, Table 2"
+        },
+        {
+          "question": "How did measurement direction affect noise levels at maximum takeoff power?",
+          "answer": "At maximum takeoff power, the lowest A-weighted level was 94.7 dBA behind the aircraft. The highest was 106.5 dBA at 270° and 315°. The 0° direction was in front of the aircraft.",
+          "locator": "Paper AIR-08 in the proceedings, Section 3, Table 2 and Figure 3"
+        },
+        {
+          "question": "How did the Katana’s exterior noise compare with earlier measurements of the Piper PA-44 Seminole?",
+          "answer": "When compared with earlier measurements taken in a similar manner, both aircraft produced noise levels of about 80 dBA at idle. At cruise power and maximum takeoff power, measured noise from the Seminole was about 10 dBA higher.",
+          "locator": "Paper AIR-08 in the proceedings, Section 4, Figures 3 and 5"
+        }
+      ]
+    },
+    {
+      "slug": "2012-aircraft-noise-models-for-trajectory-optimization-during-approach",
+      "title": "Aircraft Noise Models for Trajectory Optimization During Approach Procedure",
+      "scope": "A review of methods and models for aircraft noise during approach. The numerical results in the optimization section come from studies cited by the paper.",
+      "findings": [
+        {
+          "question": "Which two groups of noise models does the review distinguish?",
+          "answer": "The review distinguishes simulation models that describe sound sources and propagation in detail from integrated or segmented models that use tabulated relationships between noise, thrust, and distance. Simulation models are suited to analysis of a specific aircraft and procedure. Integrated or segmented models can calculate airport noise contours more quickly.",
+          "locator": "Paper AIR-05 in the proceedings, Sections 3.1 and 3.2"
+        },
+        {
+          "question": "What operational options does the review describe for reducing approach noise?",
+          "answer": "The review describes continuous descent approaches, steeper approaches, displacement of the landing threshold, and low-drag, low-power approaches. In approach models, noise depends on thrust, aerodynamic configuration, airspeed, and the distance between the aircraft and the observer.",
+          "locator": "Paper AIR-05 in the proceedings, Section 2, Figures 2 and 3"
+        },
+        {
+          "question": "What objectives can approach trajectory optimization combine?",
+          "answer": "The review presents optimization as the selection of a trajectory that balances noise, fuel consumption, and flight time subject to configuration, safety, and comfort constraints. The tools reviewed use different objective functions, including emissions and the number of residents within a given noise contour.",
+          "locator": "Paper AIR-05 in the proceedings, Section 4.4, especially Section 4.4.2"
+        }
+      ]
+    },
+    {
+      "slug": "2012-application-of-flight-test-technique-using-gps-for",
+      "title": "Application of Flight Test Technique using GPS for Position Error Assessment of Cessna 172R",
+      "scope": "Flight testing of position error in the airspeed measurement system of a Cessna 172R.",
+      "findings": [
+        {
+          "question": "How was airspeed position error estimated in flight on the Cessna 172R?",
+          "answer": "The authors applied a flight-test method using a Garmin GPS receiver on a Cessna 172R. They selected the method because it required little additional specialized equipment.",
+          "locator": "Authors’ abstract in CroRIS"
+        },
+        {
+          "question": "What reference was used to check the flight-test results?",
+          "answer": "The authors compared the flight-test results with the position error measured during certification and published in the pilot’s operating handbook (POH). The abstract does not give the magnitude or direction of the difference.",
+          "locator": "Authors’ abstract in CroRIS"
+        }
+      ]
+    },
+    {
+      "slug": "2010-suvremeni-trendovi-u-zrakoplovstvu",
+      "title": "Current Trends in Aviation",
+      "scope": "The paper summarizes European aviation development priorities as of 2010. CroRIS also records its presentation at the Prometni sustavi 2010 conference.",
+      "findings": [
+        {
+          "question": "What operational objectives did the authors identify for European air traffic?",
+          "answer": "The authors highlight greater capacity, safety, and punctuality, shorter waits, fewer delays and cancellations, and lower operating costs. Proposed measures include developing procedures and better integrating air transport with other modes of transport.",
+          "locator": "Authors’ abstract in CroRIS, paper on pp. 345–349"
+        },
+        {
+          "question": "How did the 2010 review describe aviation’s environmental objectives?",
+          "answer": "Alongside reductions in emissions and noise, the authors highlight optimization across the full aircraft life cycle, from design to recycling. The review presents these objectives in the context of EU sustainable development programs.",
+          "locator": "Authors’ abstract in CroRIS, paper on pp. 345–349"
+        }
+      ]
+    },
+    {
+      "slug": "2007-proracun-normalne-sile-i-momenta-propinjanja-kombinacije-tijelo",
+      "title": "Calculation of the Normal Force and Pitching Moment of a Wing–Body Combination",
+      "scope": "A thesis based on numerical analysis. The link to the full thesis in the former FSB repository was unavailable when checked.",
+      "findings": [
+        {
+          "question": "How does the VID method calculate the normal force and pitching moment of the wing–body combination?",
+          "answer": "The thesis combines Weissinger’s vortex method for the wing with a source and dipole method for the body. It determines the strengths of these elements from the no-penetration boundary condition and uses Bernoulli’s equation to calculate the pressure distribution and aerodynamic coefficients from local flow velocity.",
+          "locator": "Author’s abstract in CroRIS"
+        },
+        {
+          "question": "How was the numerical calculation compared with other methods?",
+          "answer": "The calculation was carried out in MATLAB. The normal force and pitching moment for the specified geometry were compared with results from other numerical methods for the same configuration reported in AIAA workshop materials. The abstract does not quantify the differences between methods.",
+          "locator": "Author’s abstract in CroRIS"
+        }
+      ]
+    }
+  ]
+}

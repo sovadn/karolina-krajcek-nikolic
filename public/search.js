@@ -1,6 +1,7 @@
 const tools = document.querySelector('#catalog-tools');
 
 if (tools) {
+  const language = document.documentElement.lang.toLowerCase().split('-')[0] === 'en' ? 'en' : 'hr';
   const search = document.querySelector('#catalog-search');
   const year = document.querySelector('#catalog-year');
   const count = document.querySelector('#catalog-count');
@@ -13,7 +14,7 @@ if (tools) {
 
   function normalize(value) {
     return value
-      .toLocaleLowerCase('hr')
+      .toLocaleLowerCase(language)
       .normalize('NFD')
       .replace(/\p{Diacritic}/gu, '')
       .replace(/đ/g, 'd')
@@ -33,7 +34,9 @@ if (tools) {
       visibleCount += Number(isVisible);
     }
 
-    count.textContent = `Prikazano ${visibleCount} od ${entries.length} radova.`;
+    count.textContent = language === 'en'
+      ? `Showing ${visibleCount} of ${entries.length} publications.`
+      : `Prikazano ${visibleCount} od ${entries.length} radova.`;
     empty.hidden = visibleCount > 0;
   }
 
