@@ -1,0 +1,1232 @@
+{
+  "profile": {
+    "name": "Karolina Krajček Nikolić",
+    "intro": "Karolina Krajček Nikolić istražuje aerodinamiku, mehaniku leta i performanse zrakoplova. Njezini se radovi oslanjaju na podatke iz stvarnih letova, mjerenja u aerotunelu, ispitivanja motora i računalne simulacije.",
+    "areas": [
+      {
+        "title": "Aerodinamika i performanse leta",
+        "question": "Kako iz mjerenja i zapisa leta procijeniti aerodinamičke značajke zrakoplova i potrošnju goriva?"
+      },
+      {
+        "title": "Zamor zrakoplovnih konstrukcija",
+        "question": "Kako uvjeti uporabe utječu na procjenu zamora i preostalog uporabnog vijeka zrakoplovnih dijelova?"
+      },
+      {
+        "title": "Pogon i bespilotne letjelice",
+        "question": "Kako alternativna goriva utječu na potisak motora? Kako hibridni pogon mijenja dolet i nosivost bespilotnih letjelica?"
+      },
+      {
+        "title": "Upravljanje letom i zračni promet",
+        "question": "Kako simulacijom ispitati upravljanje letjelicom i održavanje sigurnog razmaka? Kako mjeriti složenost prometa i opterećenje pilota i kontrolora?"
+      },
+      {
+        "title": "Buka zrakoplova",
+        "question": "Kako izmjeriti buku u pilotskoj kabini i oko zrakoplova te procijeniti utjecaj putanje prilaza na buku u okolici zračne luke?"
+      }
+    ],
+    "references": [
+      [
+        "CroRIS · profil Karoline Krajček Nikolić",
+        "https://www.croris.hr/osobe/profil/28201"
+      ],
+      [
+        "CroRIS · povezani bibliografski zapisi",
+        "https://www.croris.hr/crosbi-api/osoba/28201"
+      ],
+      [
+        "ORCID · 0000-0003-1403-428X",
+        "https://orcid.org/0000-0003-1403-428X"
+      ],
+      [
+        "OpenAlex · Karolina Krajček Nikolić",
+        "https://openalex.org/A5033996438"
+      ],
+      [
+        "OpenAlex · Karolina Krajček",
+        "https://openalex.org/A5082901655"
+      ]
+    ]
+  },
+  "papers": [
+    {
+      "title": "Seeing Complexity Like a Controller: A Task-Based, Airspace-Independent Air Traffic Complexity Model",
+      "year": 2026,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Bruno Antulov-Fantulin",
+        "Biljana Juričić",
+        "Tomislav Radišić",
+        "Karolina Krajček Nikolić"
+      ],
+      "venue": "IEEE Transactions on Intelligent Transportation Systems, Early Access, str. 1–16",
+      "doi": "10.1109/TITS.2026.3743564",
+      "url": "https://ieeexplore.ieee.org/document/11783109/",
+      "evidence": "Puni tekst",
+      "scope": "Empirijsko istraživanje s 18 kontrolora zračnog prometa. Kontrolori su procjenjivali složenost statičnih prometnih situacija. Vanjska provjera koristila je snimke operativnog prometa iz sektora ACC Zagreb West.",
+      "findings": [
+        {
+          "question": "Koliko se dobro model prenio na zračni prostor izvan skupa za treniranje?",
+          "answer": "Na 28 zasebnih operativnih situacija iz sektora ACC Zagreb West, prethodno istrenirani model v6 postigao je Pearsonov r = 0,867 prema konsenzusnim ocjenama složenosti kontrolora i Spearmanov ρ = 0,839 prema njihovu poretku. Podaci iz tog sektora bili su izdvojeni iz treniranja, kalibracije i odabira hiperparametara.",
+          "locator": "Odjeljak IV.D, str. 11–12 i slika 18",
+          "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11783109"
+        },
+        {
+          "question": "Kako su se razlikovale najbolje varijante modela pri unakrsnoj validaciji?",
+          "answer": "Autori su za svaku od 17 varijanti ponovili 300 slučajnih podjela podataka na 80 % za treniranje i 20 % za provjeru. U toj usporedbi modeli v6 i v11 imali su najveće prosječne Pearsonove korelacije s ocjenama kontrolora, r = 0,857 odnosno r = 0,862.",
+          "locator": "Odjeljak IV.A, str. 9 i slike 9–10",
+          "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11783109"
+        },
+        {
+          "question": "Kako model procjenjuje doprinos pojedinog zrakoplova složenosti prometa?",
+          "answer": "Autori su u prikazanom primjeru ponovno izračunavali predviđenu složenost nakon što bi izostavili jedan zrakoplov. Razliku u ocjeni koristili su za rangiranje zrakoplova. Aditivna struktura modela omogućila je prikaz doprinosa pojedinih zadaća kontrolora, poput razrješavanja potencijalnih konflikata i koordinacije.",
+          "locator": "Odjeljak V.A, str. 12–13 i tablica V",
+          "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11783109"
+        }
+      ],
+      "slug": "2026-seeing-complexity-like-a-controller-a-task-based"
+    },
+    {
+      "title": "Thrust and Exhaust Gas Temperature of a JJ-1400 Microturbojet Fuelled with a Commercial SAF-Containing Jet A-1 and FAME Blends",
+      "year": 2026,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Anita Domitrović",
+        "Karolina Krajček Nikolić",
+        "David Gerhardinger",
+        "Tomislav Čavka"
+      ],
+      "venue": "Energies, 19(21), 5261",
+      "doi": "10.3390/en19215261",
+      "url": "https://www.mdpi.com/1996-1073/19/21/5261",
+      "evidence": "Puni tekst",
+      "scope": "Dvije eksploratorne kampanje na jednom mikroturbomlaznom motoru JJ-1400. Sve su smjese sadržavale 5 % turbinskog ulja po obujmu. Fiksni redoslijed ispitivanja ograničava pripisivanje razlika samo gorivu.",
+      "findings": [
+        {
+          "question": "Kako se potisak JJ-1400 promijenio s komercijalnim Jet A-1 koji sadrži održivo zrakoplovno gorivo (SAF)?",
+          "answer": "Pri istim brzinama vrtnje procijenjene razlike potiska za smjese s 20–100 % komercijalnog Jet A-1 koji sadrži SAF bile su od −0,3 % do +1,4 % prema referentnom Jet A-1. Model nije utvrdio statistički značajne razlike ni u potisku ni u temperaturi ispušnih plinova. Postotci opisuju udio komercijalnog proizvoda u smjesi, a udio obnovljive komponente u samom proizvodu bio je poznat samo kao gornja granica od 50 % po masi.",
+          "locator": "Odjeljci 2.2, 3.2 i 3.3, tablica 6",
+          "url": "https://www.mdpi.com/1996-1073/19/21/5261#energies-19-05261-t006"
+        },
+        {
+          "question": "Koliko su smjese s 25 % i 50 % FAME promijenile potisak i temperaturu ispuha JJ-1400?",
+          "answer": "Na ispitnom stolu, uz jednaku brzinu vrtnje, smjesa s 25 % FAME po obujmu dala je 5,3 % manji potisak i za 52 K višu temperaturu ispušnih plinova od referentnog Jet A-1. Pri 50 % FAME model je procijenio 12,5 % manji potisak i za 72 K višu temperaturu. Rezultati vrijede za ispitani motor i uvjete kampanje.",
+          "locator": "Odjeljci 3.2 i 3.3, tablica 6 i slike 3–4",
+          "url": "https://www.mdpi.com/1996-1073/19/21/5261#sec3dot2-energies-19-05261"
+        },
+        {
+          "question": "Koliko su se slagala dva referentna mjerenja s istom serijom goriva Jet A-1?",
+          "answer": "Potisci referentnih mjerenja iz 2024. i 2025. slagali su se unutar 0,7 % pri zajedničkim brzinama vrtnje, dok je model sličnosti za topliji i vlažniji dan 2024. predviđao 6–10 % niži potisak. Ta provjera ovisi o pretpostavljenim uvjetima na ulazu u motor, jer ondje temperatura i tlak nisu mjereni.",
+          "locator": "Odjeljci 3.4 i 4.5, tablice 4–5",
+          "url": "https://www.mdpi.com/1996-1073/19/21/5261#sec3dot4-energies-19-05261"
+        }
+      ],
+      "slug": "2026-thrust-and-exhaust-gas-temperature-of-a-jj"
+    },
+    {
+      "title": "An Adaptive Six-Layer Safety Bubble for Non-Cooperative UAV Self-Separation",
+      "year": 2026,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Dominik Jerinić",
+        "Tomislav Radišić",
+        "Karolina Krajček Nikolić",
+        "Mario Muštra"
+      ],
+      "venue": "Drones, 10(9), 653",
+      "doi": "10.3390/drones10090653",
+      "url": "https://www.mdpi.com/2504-446X/10/9/653",
+      "evidence": "Puni tekst",
+      "scope": "Monte Carlo simulacije izbjegavanja u vodoravnoj ravnini, s jednom preprekom u svakom scenariju. Rezultati ovise o modeliranim uvjetima, senzorima i pravilima manevriranja.",
+      "findings": [
+        {
+          "question": "Je li adaptivna sigurnosna ovojnica zadržala razdvajanje u simuliranim susretima bespilotnih letjelica?",
+          "answer": "U 5.300 simulacija kroz šest geometrija susreta središte mase prepreke nijednom nije ušlo u peti sloj sigurnosne ovojnice (USB₅). Najmanja zabilježena udaljenost od te granice bila je 35,36 m pri presijecanju putanja pod 90°. Jednostrana gornja 95-postotna granica vjerojatnosti upada u ovojnicu bila je 0,299 % po scenariju s 1.000 simulacija, odnosno 0,994 % u scenariju s 300 simulacija. To su procjene za ispitane scenarije i uvjete.",
+          "locator": "Odjeljci 5.1, 5.2 i 5.7, tablica 4 i slike 8–9",
+          "url": "https://www.mdpi.com/2504-446X/10/9/653#drones-10-00653-t004"
+        },
+        {
+          "question": "Koliko su se simulirane rute produljile zbog manevra izbjegavanja?",
+          "answer": "Medijan produljenja rute po scenariju bio je približno 15–46 % prema ravnoj planiranoj ruti. Najveći medijan javio se kad letjelica izbjegava prepreku koja sama ne mijenja putanju. U pojedinim simulacijama susreta pod 30° ruta je bila do 8,56 puta dulja od planirane.",
+          "locator": "Odjeljak 5.1, tablica 5",
+          "url": "https://www.mdpi.com/2504-446X/10/9/653#drones-10-00653-t005"
+        },
+        {
+          "question": "Kako je adaptivna ovojnica prošla u usporedbi s fiksnom ovojnicom polumjera 152 m?",
+          "answer": "U usporedbi s istim planerom i 300 uparenih simulacija po geometriji, u susretu pod 30° fiksna ovojnica zabilježila je 22 upada u granicu razdvajanja, a adaptivna nijedan. Najmanji razmak između središta letjelica bio je 11,32 m s fiksnom i 61,54 m s adaptivnom ovojnicom. Usporedba vrijedi za odabrani fiksni polumjer i isti algoritam izbjegavanja.",
+          "locator": "Odjeljak 5.6, tablica 7",
+          "url": "https://www.mdpi.com/2504-446X/10/9/653#drones-10-00653-t007"
+        }
+      ],
+      "slug": "2026-an-adaptive-six-layer-safety-bubble-for-non"
+    },
+    {
+      "title": "Perceived Workload in Mixed IFR/VFR Terminal Operations: An Exploratory Pilot Simulator Study in Zagreb TMA",
+      "year": 2026,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Bruno Antulov-Fantulin",
+        "Karolina Krajček Nikolić",
+        "Petar Andraši",
+        "Antonio Živko"
+      ],
+      "venue": "Aerospace, 13(7), 653",
+      "doi": "10.3390/aerospace13070653",
+      "url": "https://www.mdpi.com/2226-4310/13/7/653",
+      "evidence": "Puni tekst",
+      "scope": "Eksploratorna simulatorska studija na devetero polaznika osposobljavanja za kontrolore. Fiksni redoslijed, simulirano otežana radiokomunikacija i mali uzorak ograničavaju uzročno tumačenje.",
+      "findings": [
+        {
+          "question": "Koliko se percipirano radno opterećenje razlikovalo između miješanog IFR/VFR prometa i usporedivog scenarija samo s IFR prometom?",
+          "answer": "U simulatoru zagrebačkog prilaznog prostora devetero polaznika ocijenilo je opterećenje u miješanom scenariju prosječno 9,26 bodova više na ponderiranoj ljestvici NASA-TLX. Interval pouzdanosti od 95 % bio je od −1,33 do 19,85 bodova, uz dvostrani p = 0,079. Sedmero od devetero prijavilo je veće opterećenje. Nalaz je eksploratoran, a scenarij kombinira razlike u pravilima letenja i komunikaciji.",
+          "locator": "Odjeljci 4.3 i 5.1, tablice 10 i 12 te slika 5A",
+          "url": "https://www.mdpi.com/2226-4310/13/7/653#sec4dot3-aerospace-13-00653"
+        },
+        {
+          "question": "Koje su dimenzije opterećenja bile izraženije u miješanom IFR/VFR scenariju?",
+          "answer": "U usporedbi s IFR scenarijem kod istih devetero polaznika, frustracija je bila viša za 21,67 bodova, a potreban napor za 15,00 bodova. To su bile jedine od šest podljestvica NASA-TLX s Holm-prilagođenim p < 0,05, uz p = 0,012 za frustraciju i p = 0,043 za napor. Autori te procjene smatraju eksploratornima zbog malog uzorka i redoslijeda scenarija.",
+          "locator": "Odjeljak 4.5, tablica 11 i slika 6",
+          "url": "https://www.mdpi.com/2226-4310/13/7/653#aerospace-13-00653-t011"
+        },
+        {
+          "question": "Je li veća gustoća prometa u dva IFR scenarija bila povezana s većim radnim opterećenjem?",
+          "answer": "Dva scenarija samo s IFR prometom razlikovala su se za dva zrakoplova. Prosječni ponderirani rezultat za scenarij manje gustoće umanjen za rezultat gušćeg scenarija bio je −0,63 boda na NASA-TLX, uz 95-postotni interval od −12,37 do 11,11. Oba su scenarija izvedena nakon miješanog scenarija, pa je usporedba opisna.",
+          "locator": "Odjeljci 4.4 i 5.1, tablica 10",
+          "url": "https://www.mdpi.com/2226-4310/13/7/653#sec4dot4-aerospace-13-00653"
+        }
+      ],
+      "slug": "2026-perceived-workload-in-mixed-ifr-vfr-terminal-operations"
+    },
+    {
+      "title": "Mission-Level Endurance and Payload Benefits of a Series-Hybrid Multirotor UAV",
+      "year": 2026,
+      "type": "Rad u zborniku konferencije",
+      "authors": [
+        "Ivor Vrhovec",
+        "Anita Domitrović",
+        "Karolina Krajček Nikolić",
+        "David Gerhardinger"
+      ],
+      "venue": "2026 MIPRO 49th ICT and Electronics Convention, IEEE, str. 2202–2207",
+      "doi": "10.1109/MIPRO70003.2026.11591614",
+      "url": "https://docs.mipro-proceedings.com/sp/21_23667_sp.pdf",
+      "evidence": "Puni tekst",
+      "scope": "Referentna trodimenzionalna misija u MATLAB simulaciji. Model je držao masu letjelice konstantnom unatoč potrošnji goriva i predstavljao teret preko propisane električne potražnje. Javni zbornik numerira stranice rada 2508–2513.",
+      "findings": [
+        {
+          "question": "Koliki su dolet i trajanje leta serijskog hibridnog multirotora u odnosu na električne izvedbe?",
+          "answer": "Na istoj simuliranoj 3D putanji serijski hibrid mase 15 kg s baterijom od 400 Wh prešao je 60,2 km u 148 min. Električna izvedba iste mase s baterijom od 2.600 Wh prešla je 26,5 km u 59 min, a električna izvedba mase 5 kg 14,4 km u 32 min. U tom modelu hibrid je tako ostvario oko 2,3 puta veći dolet od električne izvedbe iste mase.",
+          "locator": "Odjeljak VII.A, tablica II (javni zbornik, str. 2512)",
+          "url": "https://docs.mipro-proceedings.com/sp/21_23667_sp.pdf#page=5"
+        },
+        {
+          "question": "Koliki je održivi teret simulacija procijenila za serijski hibridni multirotor?",
+          "answer": "Model je procijenio 8 kg kao najveći održivi teret hibrida uz standardna pravila upravljanja energijom i predviđene rezerve, uz kratkotrajni pojačani režim do 10 kg. Procijenjeni limiti električnih izvedbi bili su 2 kg za platformu od 5 kg i 7 kg za platformu od 15 kg. To su preliminarne projektne procjene koje traže potvrdu ispitivanjima u letu.",
+          "locator": "Odjeljci VI.B i VII.C, slika 4 (javni zbornik, str. 2511–2513)",
+          "url": "https://docs.mipro-proceedings.com/sp/21_23667_sp.pdf#page=4"
+        },
+        {
+          "question": "Kako baterija nazivnog kapaciteta 400 Wh u simuliranoj hibridnoj misiji isporuči ukupno 465 Wh?",
+          "answer": "Za simuliranu misiju hibrida tablica navodi potrošnju 2,80 L goriva i 465 Wh kumulativno isporučene energije baterije. Generator je tijekom leta ponovno punio bateriju, a baterija je pokrivala vršna opterećenja. Iznos od 465 Wh zbroj je svih pražnjenja kroz misiju.",
+          "locator": "Odjeljci VII.A i VII.B, tablica II i slika 3 (javni zbornik, str. 2512)",
+          "url": "https://docs.mipro-proceedings.com/sp/21_23667_sp.pdf#page=5"
+        }
+      ],
+      "slug": "2026-mission-level-endurance-and-payload-benefits-of-a"
+    },
+    {
+      "title": "Quantifying Operational Uncertainty in Landing Gear Fatigue: A Hybrid Physics–Data Framework for Probabilistic Remaining Useful Life Estimation of the Cessna 172 Main Gear",
+      "year": 2025,
+      "type": "Znanstveni članak",
+      "authors": [
+        "David Gerhardinger",
+        "Karolina Krajček Nikolić",
+        "Anita Domitrović"
+      ],
+      "venue": "Applied Sciences, 15(20), 11049",
+      "doi": "10.3390/app152011049",
+      "url": "https://www.mdpi.com/2076-3417/15/20/11049",
+      "evidence": "Puni tekst",
+      "scope": "Podaci o masi i ravnoteži sa 174 leta triju aviona Cessna 172 jedne flote za obuku. Procjene zamora potječu iz numeričkog modela i nemaju izravnu validaciju prema zapisima o inspekcijama i kvarovima u uporabi.",
+      "findings": [
+        {
+          "question": "Koji je dio raspodjele mase imao najveći utjecaj na procijenjeni zamor noge glavnog stajnog trapa?",
+          "answer": "Za promatrani profil obuke, masa na prednjim sjedalima imala je najveći Borgonov indeks osjetljivosti procijenjenog prirasta oštećenja (Δ = 0,502), ispred mase goriva (0,212) i mase na stražnjim sjedalima (0,199). Rang ovisi o raspodjeli opterećenja u promatranoj floti.",
+          "locator": "Odjeljak 3.4, tablica 6 i slika 4",
+          "url": "https://www.mdpi.com/2076-3417/15/20/11049"
+        },
+        {
+          "question": "Koliki je vijek noge glavnog stajnog trapa procijenjen za promatranu flotu Cessna 172?",
+          "answer": "Monte Carlo analiza temeljena na raspodjeli opterećenja iz 174 leta za obuku procijenila je srednji vijek na oko 410.000 ciklusa (95 % interval pouzdanosti od 300.000 do 530.000). Procjene za krajnje analizirane slučajeve opterećenja kretale su se od oko 90.000 do više od 2 milijuna ciklusa.",
+          "locator": "Odjeljci 4.2 i 4.4 te zaključak",
+          "url": "https://www.mdpi.com/2076-3417/15/20/11049"
+        },
+        {
+          "question": "Koliko je pojednostavljeni model dobro reproducirao numeričke procjene prirasta oštećenja?",
+          "answer": "Kvadratni Ridge model treniran na 141 slučaju iz simulacije konačnim elementima postigao je R² = 0,991 ± 0,013 u peterostrukoj unakrsnoj validaciji. Ta mjera opisuje slaganje s numeričkim modelom u ispitivanom rasponu opterećenja.",
+          "locator": "Odjeljci 2.2, 3.2 i 4.4",
+          "url": "https://www.mdpi.com/2076-3417/15/20/11049"
+        }
+      ],
+      "slug": "2025-quantifying-operational-uncertainty-in-landing-gear-fatigue-a"
+    },
+    {
+      "title": "Low-Cost Strain-Gauge Force-Sensing Sidestick for 6-DoF Flight Simulation: Design and Human-in-the-Loop Evaluation",
+      "year": 2025,
+      "type": "Znanstveni članak",
+      "authors": [
+        "Patrik Rožić",
+        "Milan Vrdoljak",
+        "Karolina Krajček Nikolić",
+        "Jurica Ivošević"
+      ],
+      "venue": "Sensors, 25(14), 4476",
+      "doi": "10.3390/s25144476",
+      "url": "https://www.mdpi.com/1424-8220/25/14/4476",
+      "evidence": "Puni tekst",
+      "scope": "Simulacijski pokus sa 16 sudionika. Svaki je izveo jednu 155-sekundnu zadaću praćenja referentnog kuta propinjanja na jednoj osi, u simulatoru leta sa šest stupnjeva slobode.",
+      "findings": [
+        {
+          "question": "Koliko su stajale komponente bočne upravljačke palice s mjerenjem sile?",
+          "answer": "Komponente prototipa s četiri mjerne ćelije s tenzometrima stajale su približno 108 €. Popis troškova izuzima postojeću ručku Thrustmaster Warthog koju je tim već imao.",
+          "locator": "Odjeljci 2.1 i 2.2, tablica 2",
+          "url": "https://www.mdpi.com/1424-8220/25/14/4476"
+        },
+        {
+          "question": "Kako je učestalost korekcija sile bila povezana s točnošću praćenja kuta propinjanja?",
+          "answer": "Među 16 sudionika veći broj lokalnih maksimuma i minimuma sile na palici bio je povezan s manjom varijancom pogreške praćenja (r = −0,68, p = 0,004). U usporedbi dvaju krajnjih rezultata varijanca pogreške bila je 0,96 °² uz česte male korekcije i 5,04 °² uz rjeđe, izraženije korekcije.",
+          "locator": "Odjeljci 3.1 i 4.1, slika 11 i tablica 4",
+          "url": "https://www.mdpi.com/1424-8220/25/14/4476"
+        },
+        {
+          "question": "Kako su subjektivne ocjene upravljivosti i napora bile povezane s pogreškom praćenja?",
+          "answer": "U tom pokusu Cooper–Harper ocjene upravljivosti bile su povezane s varijancom pogreške praćenja (r = 0,87, p < 0,001). Za ocjenu napora iz upitnika NASA-TLX procijenjena je slabija korelacija (r = 0,17, p = 0,52).",
+          "locator": "Odjeljci 3.2 i 4.2, slike 14 i 15",
+          "url": "https://www.mdpi.com/1424-8220/25/14/4476"
+        },
+        {
+          "question": "Je li pokus otkrio razliku u preciznosti praćenja između pilota i ostalih sudionika?",
+          "answer": "U usporedbi varijance pogreške praćenja, test dvaju uzoraka dao je p = 0,37. Procjena standardizirane razlike bila je Cohenov d ≈ −0,48 (95 % interval od −1,74 do 0,51), uz statističku snagu oko 0,44. Uzorak je bio mali, a iskustvo pilota u skupini različito.",
+          "locator": "Odjeljci 3.3, 4.3 i 4.6",
+          "url": "https://www.mdpi.com/1424-8220/25/14/4476"
+        }
+      ],
+      "slug": "2025-low-cost-strain-gauge-force-sensing-sidestick-for"
+    },
+    {
+      "title": "Fuel Burn Method Assessment Using Automatic Dependent Surveillance–Broadcast and European Reanalysis Data: Limited Flight Sample Analysis",
+      "year": 2024,
+      "type": "Znanstveni članak",
+      "authors": [
+        "Karolina Krajček Nikolić",
+        "Petar Papoči",
+        "Dario Nikolić",
+        "Bruno Antulov-Fantulin"
+      ],
+      "venue": "Aerospace, 11(2), 154",
+      "doi": "10.3390/aerospace11020154",
+      "url": "https://www.mdpi.com/2226-4310/11/2/154",
+      "evidence": "Puni tekst",
+      "scope": "Pet letova jednoga komercijalnog aviona iz obitelji Airbus A320. Izravna usporedba ograničena je na intervale s dostupnim podacima i iz ADS-B-a i iz zapisivača podataka o letu (FDR), uz poznatu masu na početku analizirane putanje.",
+      "findings": [
+        {
+          "question": "Koliko se točno može procijeniti potrošnja goriva iz ADS-B podataka?",
+          "answer": "Na pet letova jednoga aviona kombinacija ADS-B-a, meteoroloških podataka ERA5 i modela BADA 3 dala je prosječnu apsolutnu pogrešku od 1,2 % u odnosu na potrošnju prema FDR-u. Najveća pogreška iznosila je 3,3 %. Usporedba vrijedi za intervale leta pokrivene objema vrstama zapisa.",
+          "locator": "Odjeljci 3.8 i 4.5, tablica 6 i slika 13a",
+          "url": "https://www.mdpi.com/2226-4310/11/2/154"
+        },
+        {
+          "question": "U kojoj je fazi leta procjena potrošnje bila najmanje točna?",
+          "answer": "Na tri prilaza s dostupnim ADS-B podacima model je podcijenio potrošnju za 38,0–53,5 %. U početnom penjanju zabilježena je precjena do 17,2 %. Pogreške tih dviju faza djelomično su se poništavale pri zbrajanju potrošnje duž putanje.",
+          "locator": "Odjeljak 4.5, tablica 6 i slika 14",
+          "url": "https://www.mdpi.com/2226-4310/11/2/154"
+        },
+        {
+          "question": "Koliko ERA5 podaci o vjetru poboljšavaju procjenu stvarne brzine kroz zrak?",
+          "answer": "Najveća srednja pogreška procjene stvarne brzine kroz zrak (TAS) u odnosu na FDR bila je 8,6 m/s kad se kao procjena koristila brzina u odnosu na tlo. Uz uračunati vjetar iz ERA5 najveća srednja pogreška bila je 1,0 m/s.",
+          "locator": "Odjeljak 4.5 i slika 12",
+          "url": "https://www.mdpi.com/2226-4310/11/2/154"
+        },
+        {
+          "question": "Koliko procjena potrošnje ovisi o početnoj masi zrakoplova?",
+          "answer": "U analizi osjetljivosti na ispitivanim putanjama, odstupanje početne mase od 10 % dalo je pogrešku procijenjene ukupne potrošnje do 6 %. Uz odstupanje mase od 20 %, pogreška potrošnje dosegnula je 10 %.",
+          "locator": "Odjeljak 4.3 i slika 9",
+          "url": "https://www.mdpi.com/2226-4310/11/2/154"
+        }
+      ],
+      "slug": "2024-fuel-burn-method-assessment-using-automatic-dependent-surveillancebroadcast"
+    },
+    {
+      "title": "Startle Effect Analysis Based on Multimodal Physiological Features in a Fighter Aircraft Simulator",
+      "year": 2024,
+      "type": "Konferencijsko izlaganje sa sažetkom",
+      "authors": [
+        "Matej Kurtak",
+        "Mate Gambiraža",
+        "Milan Vrdoljak",
+        "Karolina Krajček Nikolić",
+        "Marijan Andrić",
+        "Monika Valpovac",
+        "Vanja Kopilaš",
+        "Siniša Popović",
+        "Krešimir Ćosić"
+      ],
+      "venue": "International Conference on Cognitive Aircraft Systems, Toulouse, 16.–17. svibnja 2024., sažetak br. 224",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/833772",
+      "evidence": "Sažetak",
+      "scope": "U javno dostupnom sažetku opisana je metodologija. Veličine učinka i rezultati pojedinačnih usporedbi nisu navedeni.",
+      "findings": [
+        {
+          "question": "Kako je u simulatoru izvedeno ispitivanje reakcije pilota na nagli podražaj?",
+          "answer": "Autori su opisali zadaću praćenja kuta propinjanja u simulatoru sa šest stupnjeva slobode. Za iznenadni podražaj kombinirali su promjenu brzine kroz zrak uz nalet vjetra i zvuk grmljavine u slušalicama. Nakon podražaja pilot je trebao javiti određene parametre leta kontroli leta.",
+          "locator": "Konferencijski sažetak br. 224, opis simulacijskog scenarija",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/833772"
+        },
+        {
+          "question": "Koje su mjere obuhvatile izvedbu pilota, opterećenje i fiziološki odgovor?",
+          "answer": "Objektivna mjera izvedbe temeljila se na varijanci pogreške praćenja kuta propinjanja u segmentima s podražajem i bez njega. Subjektivne procjene obuhvatile su NASA-TLX i Cooper–Harperovu ljestvicu. Fiziološka obilježja izvedena su iz elektrokardiograma, disanja, elektrodermalne aktivnosti i elektromiografije kružnog očnog mišića.",
+          "locator": "Konferencijski sažetak br. 224, opis mjera",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/833772"
+        }
+      ],
+      "slug": "2024-startle-effect-analysis-based-on-multimodal-physiological-features"
+    },
+    {
+      "title": "Predicting the Remaining Useful Life of Light Aircraft Structural Parts: An Expert System Approach",
+      "year": 2023,
+      "type": "Znanstveni članak",
+      "authors": [
+        "David Gerhardinger",
+        "Anita Domitrović",
+        "Karolina Krajček Nikolić",
+        "Darko Ivančević"
+      ],
+      "venue": "Aerospace, 10(11), 967",
+      "doi": "10.3390/aerospace10110967",
+      "url": "https://www.mdpi.com/2226-4310/10/11/967",
+      "evidence": "Puni tekst",
+      "scope": "Studija slučaja noge glavnog stajnog trapa Cessne 172R. Procjene se temelje na numeričkoj analizi, uz pretpostavku linearnog nakupljanja oštećenja od zamora.",
+      "findings": [
+        {
+          "question": "Kako se operativni zapisi mogu upotrijebiti za procjenu preostalog uporabnog vijeka konstrukcijskog dijela?",
+          "answer": "Predloženi ekspertni sustav povezuje zapise o masi i raspodjeli opterećenja s vijekom izračunatim za pojedine faze operacije metodom konačnih elemenata. Nakupljeno oštećenje računa linearnim Palmgren–Minerovim pravilom, a modul za objašnjenje povezuje procjenu s postojećim programom održavanja.",
+          "locator": "Odjeljci 3.1–3.4, tablica 2 i slika 4",
+          "url": "https://www.mdpi.com/2226-4310/10/11/967"
+        },
+        {
+          "question": "Koliko su se razlikovale numeričke procjene vijeka noge stajnog trapa u dvama krajnjim scenarijima?",
+          "answer": "Za ponavljano opterećenje iz lakog scenarija vožnje nakon slijetanja model je procijenio približno 21,23 milijuna ciklusa do zamornog otkaza, a za opterećenje iz teškog scenarija slijetanja približno 122.700 ciklusa. Omjer oko 173 odnosi se na dva odabrana scenarija koji se razlikuju po fazi operacije i raspodjeli mase.",
+          "locator": "Odjeljak 4, slike 6 i 7",
+          "url": "https://www.mdpi.com/2226-4310/10/11/967"
+        },
+        {
+          "question": "Gdje je model identificirao područje najkraćega procijenjenog vijeka noge glavnog stajnog trapa?",
+          "answer": "U prikazanoj numeričkoj analizi područje najmanjeg procijenjenog vijeka bilo je blizu fiksnog spoja noge stajnog trapa s trupom. U scenariju teškog slijetanja to se područje poklapalo s koncentracijom najvećega von Misesova naprezanja.",
+          "locator": "Odjeljak 4, slike 6–8",
+          "url": "https://www.mdpi.com/2226-4310/10/11/967"
+        }
+      ],
+      "slug": "2023-predicting-the-remaining-useful-life-of-light-aircraft"
+    },
+    {
+      "title": "Modelling piston engine aircraft performance using pilot's operating handbook",
+      "year": 2022,
+      "type": "Rad u konferencijskom zborniku",
+      "authors": [
+        "Petar Papoči",
+        "Karolina Krajček Nikolić",
+        "Petar Andraši"
+      ],
+      "venue": "Transportation Research Procedia, 64, 174–182 (ZIRP 2022)",
+      "doi": "10.1016/j.trpro.2022.09.021",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352146522006354",
+      "evidence": "Puni tekst",
+      "scope": "Model za zrakoplove općeg zrakoplovstva s atmosferskim klipnim motorom u čistoj konfiguraciji. Rezultati usporedbe odnose se na podatke iz priručnika.",
+      "findings": [
+        {
+          "question": "Koliko dobro model iz operativnog priručnika reproducira penjanje i krstarenje Cessne C182?",
+          "answer": "U prikazanom primjeru model Cessne C182 reproducirao je podatke iz pilotskog operativnog priručnika s koeficijentom determinacije R² = 0,997 za penjanje i R² = 0,991 za krstarenje. Te vrijednosti opisuju slaganje s podacima iz priručnika.",
+          "locator": "Odjeljak 3, slike 4 i 5, str. 179–181",
+          "url": "https://www.scribd.com/document/993924037/2"
+        },
+        {
+          "question": "Koliko dobro model reproducira snagu atmosferskog klipnog motora s promjenom visine?",
+          "answer": "Za motor Lycoming IO-540-AB1A5 u Cessni C182 model je u usporedbi s podacima iz priručnika proizvođača postigao R² = 0,999. Usporedba uključuje standardne i nestandardne atmosferske uvjete.",
+          "locator": "Odjeljak 3, slika 1, str. 178–179",
+          "url": "https://www.scribd.com/document/993924037/2"
+        },
+        {
+          "question": "Kako model prikazuje penjanje pri smanjenoj snazi?",
+          "answer": "Model računa potisak za odabranu postavku snage, pa u čistoj konfiguraciji može simulirati i penjanje pri smanjenoj snazi. Autori su model usporedili s priručnicima više tipova zrakoplova, uključujući Cessnu C172, Piper PA28 i Cirrus SR22. Zaključak navodi nadtlačne motore i nečistu konfiguraciju kao teme za buduće proširenje.",
+          "locator": "Odjeljak 4, str. 181–182",
+          "url": "https://www.scribd.com/document/993924037/2"
+        }
+      ],
+      "slug": "2022-modelling-piston-engine-aircraft-performance-using-pilot-s"
+    },
+    {
+      "title": "Modeling the Effect of One Engine Inoperative for Bada Flight Performance Model",
+      "year": 2022,
+      "type": "Rad u konferencijskom zborniku",
+      "authors": [
+        "Petar Mage",
+        "Karolina Krajček Nikolić"
+      ],
+      "venue": "45th Jubilee International Convention on Information, Communication and Electronic Technology (MIPRO), 1526–1531",
+      "doi": "10.23919/MIPRO55190.2022.9803716",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/807679",
+      "evidence": "Puni tekst",
+      "scope": "Model za regionalni dvomotorni turboprop Dash 8 Q400 u čistoj konfiguraciji. Analiza se oslanja na podatke iz priručnika zrakoplova. U službenom MIPRO PDF-u rad je tiskan na str. 1744–1749, a IEEE zapis navodi 1526–1531.",
+      "findings": [
+        {
+          "question": "Kako otkaz jednog motora mijenja modelirani otpor u krstarenju Dash 8 Q400?",
+          "answer": "U proračunu za čistu konfiguraciju koeficijent parazitskog otpora u krstarenju porastao je s 0,0298 pri radu oba motora na 0,0321 s jednim neoperativnim motorom. Najbolji modelirani omjer uzgona i otpora smanjio se s približno 15 na 13.",
+          "locator": "Odjeljak IV, slike 1 i 2 i tablica 2, str. 1747–1748 u PDF-u MIPRO-a",
+          "url": "https://mipro.hr/LinkClick.aspx?fileticket=vgJIHBtuOeE%3D&language=hr-HR&tabid=196#page=1791"
+        },
+        {
+          "question": "Kolika je u jednom ispitivanom primjeru razlika u brzini penjanja nakon otkaza motora?",
+          "answer": "Za masu 29 t, standardne atmosferske uvjete i visinu od 11.000 stopa autori su iz podataka operativnog priručnika dobili približno 2.000 stopa u minuti pri radu oba motora i približno 500 stopa u minuti s jednim neoperativnim motorom.",
+          "locator": "Odjeljak IV, slika 4, str. 1748 u PDF-u MIPRO-a",
+          "url": "https://mipro.hr/LinkClick.aspx?fileticket=vgJIHBtuOeE%3D&language=hr-HR&tabid=196#page=1792"
+        },
+        {
+          "question": "Koje su granice podataka za modeliranje leta s jednim neoperativnim motorom?",
+          "answer": "Podaci o vremenu penjanja ili spuštanja iz priručnika zaokruženi su na minutu. Za spuštanje nakon otkaza motora (drift-down) priručnik nije pokrivao sve kombinacije mase i temperature iz studije, pa autori za taj režim nisu iznijeli rezultate.",
+          "locator": "Odjeljci IV i V, str. 1748–1749 u PDF-u MIPRO-a",
+          "url": "https://mipro.hr/LinkClick.aspx?fileticket=vgJIHBtuOeE%3D&language=hr-HR&tabid=196#page=1792"
+        }
+      ],
+      "slug": "2022-modeling-the-effect-of-one-engine-inoperative-for"
+    },
+    {
+      "title": "CFD Analysis of F-16 Wing Airfoil Aerodynamics in Supersonic Flow",
+      "year": 2022,
+      "type": "Rad u konferencijskom zborniku",
+      "authors": [
+        "Leo Matak",
+        "Karolina Krajček Nikolić"
+      ],
+      "venue": "The Science and Development of Transport—ZIRP 2021, Springer, 197–210",
+      "doi": "10.1007/978-3-030-97528-9_13",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-97528-9_13",
+      "evidence": "Sažetak",
+      "scope": "Konferencija je održana 2021., a poglavlje je objavljeno 2022. Izdvojeni rezultati potječu iz numeričke usporedbe aeroprofila opisane u izdavačevu sažetku.",
+      "findings": [
+        {
+          "question": "Kako su autori usporedili aerodinamičke konfiguracije aeroprofila u nadzvučnom strujanju?",
+          "answer": "Aerodinamička svojstva profila NACA 64A-204 ispitali su računalnom simulacijom stlačivog turbulentnog strujanja. Primijenili su Reynoldsove osrednjene Navier–Stokesove jednadžbe (RANS) i model turbulencije k–ω SST.",
+          "locator": "Sažetak, Springer",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-030-97528-9_13#Abs1"
+        },
+        {
+          "question": "Kako se u simulaciji promijenio najveći omjer uzgona i otpora pri promjeni geometrije profila?",
+          "answer": "Pri istim nadzvučnim uvjetima simulacije, najveći omjer koeficijenata uzgona i otpora (CL/CD) bio je 6,9 za geometriju namijenjenu podzvučnom režimu i 7,1 za geometriju namijenjenu nadzvučnom režimu. Riječ je o rezultatu CFD simulacije dviju konfiguracija aeroprofila.",
+          "locator": "Sažetak, Springer",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-030-97528-9_13#Abs1"
+        }
+      ],
+      "slug": "2022-cfd-analysis-of-f-16-wing-airfoil-aerodynamics"
+    },
+    {
+      "title": "Estimation of Aerodynamic Coefficients in a Small Subsonic Wind Tunnel",
+      "year": 2018,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Karolina Krajček Nikolić",
+        "Anita Domitrović",
+        "Slobodan Janković"
+      ],
+      "venue": "Promet – Traffic & Transportation, 30(4), 457–463",
+      "doi": "10.7307/ptt.v30i4.2685",
+      "url": "https://hrcak.srce.hr/205393",
+      "evidence": "Puni tekst",
+      "scope": "Procjena korekcija za model regionalnog zrakoplova Dash 8 Q400 u mjerilu 1:100 u malom podzvučnom aerotunelu AT-1.",
+      "findings": [
+        {
+          "question": "Koja je korekcija najvažnija pri prijenosu aksijalnog koeficijenta s modela u tunelu na stvarni let?",
+          "answer": "Za model Dash 8 Q400 u mjerilu 1:100 u tunelu AT-1, najveća procijenjena korekcija aksijalnog koeficijenta proizlazila je iz razlike Reynoldsovih brojeva. U ispitanoj postavi utjecaj mjerne konfiguracije na korekciju bio je približno šest puta manji.",
+          "locator": "Odjeljci 3.3 i 4, str. 462–463",
+          "url": "https://pdfs.semanticscholar.org/80c0/dd2dae8759b0aa8c808a2606f9457dd4fe8b.pdf#page=6"
+        },
+        {
+          "question": "Kolika je procijenjena ukupna korekcija aksijalnog koeficijenta za Dash 8 Q400?",
+          "answer": "Procijenjeni aksijalni koeficijent zrakoplova u letu bio je za 62 jedinice otpora (engl. drag counts) manji od vrijednosti modela u tunelu. Zaključak navodi ukupnu korekciju od 27 % uz pretpostavljeni aksijalni koeficijent u letu od približno 0,0230.",
+          "locator": "Odjeljci 3.4 i 4, str. 462–463",
+          "url": "https://pdfs.semanticscholar.org/80c0/dd2dae8759b0aa8c808a2606f9457dd4fe8b.pdf#page=6"
+        },
+        {
+          "question": "Je li u istoj postavi korekcija nagiba koeficijenta normalne sile bila jednako velika?",
+          "answer": "Procijenjena korekcija nagiba koeficijenta normalne sile iznosila je 0,44 %. Autori su iz toga zaključili da bi korekcija koeficijenta momenta propinjanja također bila mala u danim uvjetima.",
+          "locator": "Odjeljci 3.5 i 4, str. 462–463",
+          "url": "https://pdfs.semanticscholar.org/80c0/dd2dae8759b0aa8c808a2606f9457dd4fe8b.pdf#page=6"
+        }
+      ],
+      "slug": "2018-estimation-of-aerodynamic-coefficients-in-a-small-subsonic"
+    },
+    {
+      "title": "System for acquisition and processing of pressure data around body in airflow",
+      "year": 2017,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Domagoj Mežnarić",
+        "Karolina Krajček Nikolić",
+        "Davor Franjković"
+      ],
+      "venue": "40th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO)",
+      "doi": "10.23919/MIPRO.2017.7973671",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/648233",
+      "evidence": "Sažetak",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Kako su autori mjerili raspodjelu tlaka oko aeroprofila NACA 2421?",
+          "answer": "Mjerenja su proveli u zatvorenom podzvučnom aerotunelu AT-1. Raspodjelu tlaka oko aeroprofila NACA 2421 bilježili su skenerom Intelligent Pressure Scanner 9016, a digitalizirane podatke prenosili su Ethernetom i obrađivali u NUSS-u i LabVIEW-u.",
+          "locator": "Sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/648233"
+        },
+        {
+          "question": "S kojom su mjernom metodom usporedili elektronički skener?",
+          "answer": "Rezultate elektroničkog mjerenja usporedili su s rezultatima piezometarske harfe. Sažetak potvrđuje provedenu usporedbu i izostavlja brojčanu razliku između metoda.",
+          "locator": "Sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/648233"
+        }
+      ],
+      "slug": "2017-system-for-acquisition-and-processing-of-pressure-data"
+    },
+    {
+      "title": "Development of Research Capacities in the Field of Applied Aerodynamics",
+      "year": 2017,
+      "type": "Tehničko izvješće",
+      "authors": [
+        "Anita Domitrović",
+        "Davor Franjković",
+        "Ernest Bazijanac",
+        "Tino Bucak",
+        "Karolina Krajček Nikolić",
+        "Milan Vrdoljak",
+        "Slobodan Janković"
+      ],
+      "venue": "PROM-PRO 2015–2017, Proceedings of the Technical Reports",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi/publikacija/rad-ostalo/780120",
+      "evidence": "Sažetak",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Kako je nastao Laboratorij za aerodinamiku FPZ-a?",
+          "answer": "Prema izvješću, uspostava laboratorija počela je 1997. suradnjom FPZ-a i Fakulteta strojarstva i brodogradnje. Aerotunel je isprva bio u hangaru FPZ-a u Lučkom, a koristio se i u nastavi na oba fakulteta.",
+          "locator": "Sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/rad-ostalo/780120"
+        },
+        {
+          "question": "Na što je bio usmjeren projekt unaprjeđenja aerotunela AT-1?",
+          "answer": "Projekt je bio usmjeren na razvoj sustava mjerenja, poboljšanje postojeće opreme i nabavu nove opreme. Sažetak opisuje razvoj istraživačkih kapaciteta i izostavlja kvantitativnu procjenu poboljšanja mjerenja.",
+          "locator": "Sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/rad-ostalo/780120"
+        }
+      ],
+      "slug": "2017-development-of-research-capacities-in-the-field-of"
+    },
+    {
+      "title": "Distributed Flight Control System Simulator for Aircraft Autostabilization",
+      "year": 2017,
+      "type": "Tehničko izvješće",
+      "authors": [
+        "Karolina Krajček Nikolić",
+        "Edouard Ivanjko",
+        "Miroslav Šegvić"
+      ],
+      "venue": "PROM-PRO 2015–2017, Proceedings of the Technical Reports",
+      "doi": "",
+      "url": "https://www.academia.edu/83502700/Distributed_Flight_Control_System_Simulator_for_Aircraft_Autostabilization",
+      "evidence": "Puni tekst",
+      "scope": "Tehničko izvješće opisuje i sažima zasebne radove predstavljene na MIPRO-u 2015. i 2016.",
+      "findings": [
+        {
+          "question": "Kako je zamišljen simulator s fizičkim upravljačkim jedinicama?",
+          "answer": "Model zrakoplova, atmosfere, motora, senzora i aktuatora izvodi se u stvarnom vremenu u MATLAB/Simulinku. Fizičke upravljačke jedinice povezane su stvarnom komunikacijskom mrežom i njihove se naredbe vraćaju simuliranom zrakoplovu.",
+          "locator": "Odjeljak 3.3 i slika 5",
+          "url": "https://www.academia.edu/83502700/Distributed_Flight_Control_System_Simulator_for_Aircraft_Autostabilization"
+        },
+        {
+          "question": "Što je bilo izvedeno na kraju projekta i što se tek planiralo ispitati?",
+          "answer": "Projekt je pripremio opremu za simulaciju s fizičkim sklopovima (HIL). Razvoj upravljačkog softvera i usporedba raspodijeljene s centraliziranom arhitekturom ostali su planirani za daljnji rad.",
+          "locator": "Odjeljci 3.3 i 6",
+          "url": "https://www.academia.edu/83502700/Distributed_Flight_Control_System_Simulator_for_Aircraft_Autostabilization"
+        }
+      ],
+      "slug": "2017-distributed-flight-control-system-simulator-for-aircraft-autostabilization"
+    },
+    {
+      "title": "A Proposal for a Fully Distributed Flight Control System Design",
+      "year": 2016,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Miroslav Šegvić",
+        "Karolina Krajček Nikolić",
+        "Edouard Ivanjko"
+      ],
+      "venue": "39th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), str. 1099–1103",
+      "doi": "10.1109/MIPRO.2016.7522304",
+      "url": "https://www.researchgate.net/publication/305908044_A_proposal_for_a_Fully_Distributed_Flight_Control_System_design",
+      "evidence": "Puni tekst",
+      "scope": "Arhitekturni prijedlog i zahtjevi za simulator.",
+      "findings": [
+        {
+          "question": "Kako predložena arhitektura raspodjeljuje upravljanje letom?",
+          "answer": "U predloženom potpuno raspodijeljenom sustavu upravljačku logiku zajednički izvršavaju neovisne jedinice smještene uz aktuatore upravljačkih površina. Rad razmatra njihovo umrežavanje, redundanciju i preuzimanje funkcije u slučaju kvara.",
+          "locator": "Odjeljci III–IV",
+          "url": "https://www.researchgate.net/publication/305908044_A_proposal_for_a_Fully_Distributed_Flight_Control_System_design"
+        },
+        {
+          "question": "Kako su autori predložili ispitati ponašanje takve arhitekture?",
+          "answer": "Predložili su simulator s fizičkim upravljačkim jedinicama i stvarnom komunikacijskom mrežom u petlji s modelom leta u stvarnom vremenu. Rad definira zahtjeve simulatora i predviđenu usporedbu s centraliziranim sustavom.",
+          "locator": "Odjeljci V–VI",
+          "url": "https://www.researchgate.net/publication/305908044_A_proposal_for_a_Fully_Distributed_Flight_Control_System_design"
+        }
+      ],
+      "slug": "2016-a-proposal-for-a-fully-distributed-flight-control"
+    },
+    {
+      "title": "Aircraft performance monitoring from flight data",
+      "year": 2015,
+      "type": "Članak u časopisu",
+      "authors": [
+        "Karolina Krajček",
+        "Dario Nikolić",
+        "Anita Domitrović"
+      ],
+      "venue": "Tehnički vjesnik / Technical Gazette, 22(5), str. 1337–1344",
+      "doi": "10.17559/TV-20131220145918",
+      "url": "https://hrcak.srce.hr/file/216706",
+      "evidence": "Puni tekst",
+      "scope": "Pregled metoda i istraživački prijedlog. Istoimeni rad s dva autora zasebno je objavljen u zborniku KoREMA 2014.",
+      "findings": [
+        {
+          "question": "Što metode praćenja performansi iz ustaljenog krstarenja mogu mjeriti?",
+          "answer": "Metode opisane u radu uspoređuju podatke o potrošnji goriva u krstarenju s teorijskim podacima ili izmjerenom osnovicom te utvrđuju odstupanje specifičnog doleta. Autori opisuju zašto je precizna podjela odstupanja između promjena na zmaju i motoru ograničena poznavanjem stvarnog potiska.",
+          "locator": "Odjeljci 3 i 5 te slike 3–4",
+          "url": "https://hrcak.srce.hr/file/216706"
+        },
+        {
+          "question": "Kako pogreška procjene potiska utječe na procjenu otpora?",
+          "answer": "U prikazanom postupku pogreška procjene stvarnog potiska prenosi se u izračun aerodinamičkog otpora. Autori upozoravaju da odstupanje broja okretaja motora N₁ ili omjera tlakova EPR može odražavati promijenjenu vezu tih pokazatelja s potiskom.",
+          "locator": "Odjeljak 3.1, osobito str. 1340–1342",
+          "url": "https://hrcak.srce.hr/file/216706"
+        },
+        {
+          "question": "Kako su autori predložili procijeniti aerodinamičke koeficijente iz uobičajenog leta?",
+          "answer": "Predložili su simulaciju krutog transportnog zrakoplova u ustaljenom letu i procjenu koeficijenata iz ulaznih i izlaznih podataka. U istraživačkom planu podaci iz zapisivača QAR služe usporedbi sa simulacijom.",
+          "locator": "Odjeljci 4 i 5",
+          "url": "https://hrcak.srce.hr/file/216706"
+        }
+      ],
+      "slug": "2015-aircraft-performance-monitoring-from-flight-data"
+    },
+    {
+      "title": "Technologies for distributed flight control systems: A review",
+      "year": 2015,
+      "type": "Pregledni rad u zborniku",
+      "authors": [
+        "Miroslav Šegvić",
+        "Karolina Krajček",
+        "Edouard Ivanjko"
+      ],
+      "venue": "38th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO), str. 1060–1065",
+      "doi": "10.1109/MIPRO.2015.7160432",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/624566",
+      "evidence": "Sažetak",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Koje primjene raspodijeljenog upravljanja letom obuhvaća pregled?",
+          "answer": "Pregled javno dostupne znanstvene i tehničke literature ilustrira tehnologije primjerima rojeva manjih bespilotnih letjelica i raspodijeljenih mreža za detekciju i izolaciju kvarova.",
+          "locator": "Sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/624566"
+        },
+        {
+          "question": "U kojim se još zrakoplovnim sustavima razmatra raspodjela funkcija?",
+          "answer": "Sažetak skupa među primjerima navodi raspodijeljene mreže senzora, nadzor stanja konstrukcije i sustave upravljanja letom otporne na kvarove. Riječ je o opsegu pregleda literature.",
+          "locator": "Sažetak skupa MIPRO 2015",
+          "url": "https://www.mipro.hr/_Events_/tabid/110/language/en-US/Default.aspx?event=MIPRO2015.CTS"
+        }
+      ],
+      "slug": "2015-technologies-for-distributed-flight-control-systems-a-review"
+    },
+    {
+      "title": "Hrvatsko zrakoplovno nazivlje",
+      "year": 2015,
+      "type": "Terminološki rječnik",
+      "authors": [
+        "Tomislava Bošnjak Botica",
+        "Maja Bratanić",
+        "Ivana Francetić",
+        "Davor Franjković",
+        "Biljana Juričić",
+        "Karolina Krajček",
+        "Jadranka Majić",
+        "Doris Novak",
+        "Ana Ostroški Anić",
+        "Boran Pivčić",
+        "Tomislav Radišić",
+        "Ružica Škurla Babić",
+        "Milan Vrdoljak"
+      ],
+      "venue": "Institut za hrvatski jezik i jezikoslovlje, Terminološki rječnici Strune, knjiga 16, ISBN 978-953-7967-46-8",
+      "doi": "",
+      "url": "https://struna.ihjj.hr/v4/uploads/60ca7534b445602.pdf",
+      "evidence": "Puni tekst",
+      "scope": "Referentni rječnik. Natuknice služe citiranju terminologije i definicija.",
+      "findings": [
+        {
+          "question": "Koji je izvor za hrvatske zrakoplovne nazive, definicije i engleske istovrijednice?",
+          "answer": "Rječnik objedinjuje terminološku građu projekta usustavljivanja i normiranja hrvatskoga zrakoplovnog nazivlja. Natuknice sadrže definicije, engleske istovrijednice, a prema potrebi i dopuštene ili predložene nazive.",
+          "locator": "Uvodna napomena i natuknice na str. 7–8",
+          "url": "https://struna.ihjj.hr/v4/uploads/60ca7534b445602.pdf"
+        },
+        {
+          "question": "Kako rječnik razlikuje značenja engleskog termina aerodynamic balance?",
+          "answer": "Za uređaj kojim se u eksperimentalnoj aerodinamici određuju sile i momenti navodi hrvatski naziv aerodinamička vaga. Istu englesku istovrijednicu bilježi i uz natuknicu aerodinamička kompenzacija, za smanjenje momenta oko zgloba upravljačke površine i sile na upravljaču.",
+          "locator": "Str. 7, natuknice „aerodinamička vaga” i „aerodinamička kompenzacija”",
+          "url": "https://struna.ihjj.hr/v4/uploads/60ca7534b445602.pdf"
+        }
+      ],
+      "slug": "2015-hrvatsko-zrakoplovno-nazivlje"
+    },
+    {
+      "title": "Zbirka riješenih zadataka iz Teorije leta I",
+      "year": 2015,
+      "type": "Nastavna zbirka",
+      "authors": [
+        "Davor Franjković",
+        "Karolina Krajček Nikolić"
+      ],
+      "venue": "Fakultet prometnih znanosti Sveučilišta u Zagrebu, ISBN 978-953-243-077-6",
+      "doi": "",
+      "url": "https://www.slideshare.net/slideshow/zbirka-rijesenih-zadataka-iz-teorije-leta-dfranjkovic-kknikoli/239754466",
+      "evidence": "Puni tekst",
+      "scope": "Nastavni materijal. Tvrdnje opisuju pokrivenost i namjenu građe.",
+      "findings": [
+        {
+          "question": "Gdje pronaći riješene primjere aerodinamike za početni studij aeronautike?",
+          "answer": "Zbirka namijenjena prvoj godini studija polazi od osnovnih veličina stanja fluida, mehanike fluida i standardne atmosfere pa prelazi na aeroprofile, krila i viskozno strujanje. Sadrži i zadatke o velikim brzinama, propelerima i aerodinamičkoj sličnosti.",
+          "locator": "Predgovor i sadržaj, str. i",
+          "url": "https://www.slideshare.net/slideshow/zbirka-rijesenih-zadataka-iz-teorije-leta-dfranjkovic-kknikoli/239754466"
+        },
+        {
+          "question": "Koje tablice i formule prate zadatke?",
+          "answer": "U prilozima su tablica standardne atmosfere i popis formula predviđenih za uporabu na pismenom dijelu ispita iz Teorije leta I.",
+          "locator": "Prilozi A i B, str. 134–135",
+          "url": "https://www.slideshare.net/slideshow/zbirka-rijesenih-zadataka-iz-teorije-leta-dfranjkovic-kknikoli/239754466"
+        }
+      ],
+      "slug": "2015-zbirka-rijesenih-zadataka-iz-teorije-leta-i"
+    },
+    {
+      "title": "Zbirka riješenih zadataka iz Teorije leta II",
+      "year": 2015,
+      "type": "Nastavna zbirka",
+      "authors": [
+        "Davor Franjković",
+        "Karolina Krajček Nikolić"
+      ],
+      "venue": "Fakultet prometnih znanosti Sveučilišta u Zagrebu, ISBN 978-953-243-078-3",
+      "doi": "",
+      "url": "https://www.academia.edu/18699867/Zbirka_rije%C5%A1enih_zadataka_iz_Teorije_leta_II",
+      "evidence": "Puni tekst",
+      "scope": "Nastavni materijal. Tvrdnje opisuju pokrivenost i namjenu građe.",
+      "findings": [
+        {
+          "question": "Koje proračune performansi zrakoplova pokriva zbirka?",
+          "answer": "Zbirka za drugu godinu studija obrađuje horizontalni let, penjanje i spuštanje, dolet i istrajnost, uzlijetanje, slijetanje i zaokrete. Zasebna poglavlja obrađuju ukupnu energiju te uzdužnu stabilnost i upravljivost.",
+          "locator": "Poglavlja 4–11, str. 41–124",
+          "url": "https://www.academia.edu/18699867/Zbirka_rije%C5%A1enih_zadataka_iz_Teorije_leta_II"
+        },
+        {
+          "question": "Kako zbirka povezuje mehaniku s proračunima leta?",
+          "answer": "Prva tri poglavlja daju riješene primjere iz kinematike, dinamike i teorije mehanizama. Prilozi sadrže karakteristike Cessne Skylane i Cessne Citation 3, tablicu standardne atmosfere i popis formula.",
+          "locator": "Predgovor, poglavlja 1–3 i prilozi, str. 125–129",
+          "url": "https://www.academia.edu/18699867/Zbirka_rije%C5%A1enih_zadataka_iz_Teorije_leta_II"
+        }
+      ],
+      "slug": "2015-zbirka-rijesenih-zadataka-iz-teorije-leta-ii"
+    },
+    {
+      "title": "Synthesis of Simple Aircraft Performance Model with Flight Gear Pilot Interface",
+      "year": 2014,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Alisa Midžić",
+        "Karolina Krajček"
+      ],
+      "venue": "2nd International Conference on Traffic and Transport Engineering (ICTTE), Beograd, str. 473–480",
+      "doi": "",
+      "url": "http://ijtte.com/uploads/news_files/ICTTE_Belgrade_2014-Proceedings.pdf#page=496",
+      "evidence": "Puni tekst",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Kako su povezali pojednostavljeni model leta s pilotskim sučeljem?",
+          "answer": "Modificirani model performansi materijalne točke izveden u MATLAB/Simulinku povezan je s FlightGearom. Simulink opisuje gibanje, a FlightGear daje pilotu vizualnu referencu i sučelje pilotske kabine.",
+          "locator": "Odjeljci 1 i 2 te slike 1–2",
+          "url": "http://ijtte.com/uploads/news_files/ICTTE_Belgrade_2014-Proceedings.pdf#page=496"
+        },
+        {
+          "question": "Koji ulazi određuju gibanje i čemu je model namijenjen?",
+          "answer": "Gibanje je opisano u vertikalnoj ravnini. Ulazi su otklon kormila visine, kut valjanja i položaj ručice potiska. Autori navode obrazovanje i preliminarne analize kao glavne namjene modela.",
+          "locator": "Sažetak i odjeljci 1 i 4",
+          "url": "http://ijtte.com/uploads/news_files/ICTTE_Belgrade_2014-Proceedings.pdf#page=496"
+        },
+        {
+          "question": "Kako se model ponašao pri simuliranom letu bez pomicanja upravljačkih površina?",
+          "answer": "Pri približno 60 % najveće dostupne snage i neutralnom položaju upravljačkih površina, simulirana brzina i napadni kut ustalili su se nakon približno dvije minute. Autori su model zasnovali na podacima za Piper Cherokee PA-28-180 i prikazali dvije preliminarne simulacije.",
+          "locator": "Odjeljci 3 i 4, slika 6",
+          "url": "http://ijtte.com/uploads/news_files/ICTTE_Belgrade_2014-Proceedings.pdf#page=501"
+        }
+      ],
+      "slug": "2014-synthesis-of-simple-aircraft-performance-model-with-flight"
+    },
+    {
+      "title": "Method for Aerodynamic Characteristics Monitoring of Transport Aircraft in Operation",
+      "year": 2014,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Karolina Krajček",
+        "Ivana Varešak"
+      ],
+      "venue": "ZIRP 2014, Development Possibilities of Croatian Transport System – Anniversary of EU Membership, str. 27–35",
+      "doi": "",
+      "url": "https://www.fpz.unizg.hr/file/062f1553d6e00e5d574b735ef5d71353.pdf#page=31",
+      "evidence": "Puni tekst",
+      "scope": "Zaseban konferencijski rad s Ivanom Varešak kao koautoricom opisuje plan istraživanja.",
+      "findings": [
+        {
+          "question": "Kako su autori zamislili praćenje aerodinamičkih značajki iz redovitog komercijalnog leta?",
+          "answer": "Istraživački okvir AEROQAR predlaže procjenu gradijenata aerodinamičkih koeficijenata iz zapisa standardnih profila leta. Plan je koristiti podatke iz uobičajenih režima leta bez posebno osmišljenih ispitnih manevara.",
+          "locator": "Uvod, odjeljak 3.1 i slika 1",
+          "url": "https://www.fpz.unizg.hr/file/062f1553d6e00e5d574b735ef5d71353.pdf#page=31"
+        },
+        {
+          "question": "Koje su komponente planirane za ispitivanje postupka?",
+          "answer": "Predviđeni su model gibanja sa šest stupnjeva slobode, modeli autopilota i senzora, predobrada i filtriranje signala te procjena parametara. Plan provjere uključuje simulirane podatke s realističnim mjernim pogreškama u uvjetima stalnog vjetra i turbulencije.",
+          "locator": "Odjeljci 3.1, 3.2 i 5",
+          "url": "https://www.fpz.unizg.hr/file/062f1553d6e00e5d574b735ef5d71353.pdf#page=31"
+        }
+      ],
+      "slug": "2014-method-for-aerodynamic-characteristics-monitoring-of-transport-aircraft"
+    },
+    {
+      "title": "Metoda za praćenje aerodinamičkih značajki transportnog zrakoplova tijekom eksploatacije",
+      "year": 2014,
+      "type": "Doktorska disertacija",
+      "authors": [
+        "Karolina Krajček"
+      ],
+      "venue": "Sveučilište u Zagrebu, Fakultet prometnih znanosti",
+      "doi": "10.13140/RG.2.1.1735.0560",
+      "url": "https://www.unizg.hr/fileadmin/rektorat/Istrazivanja/Poslijediplomski/Doktorski_programi/knjige_dr._sc/DR_SC_26.pdf",
+      "evidence": "Sažetak",
+      "scope": "Zasebna disertacija istoga istraživačkog smjera kao konferencijski rad sa sličnim engleskim naslovom. DOI ResearchGate zapisa označava zapis disertacije.",
+      "findings": [
+        {
+          "question": "Kako je AEROQAR provjeren u doktorskoj disertaciji?",
+          "answer": "AEROQAR je provjeren na simuliranom gibanju krutog zrakoplova sa šest stupnjeva slobode u MATLAB-u. Simulirani su podaci opterećeni šumom i pogreškama stvarnih senzora, a ispitani su uvjeti stalnog horizontalnog vjetra i atmosferske turbulencije.",
+          "locator": "Sažetak doktorskog rada u sveučilišnoj knjizi doktora znanosti",
+          "url": "https://www.unizg.hr/fileadmin/rektorat/Istrazivanja/Poslijediplomski/Doktorski_programi/knjige_dr._sc/DR_SC_26.pdf"
+        },
+        {
+          "question": "Što je pokazala procjena gradijenata aerodinamičkih koeficijenata?",
+          "answer": "U simulacijskim ispitivanjima s dodanim mjernim pogreškama autorica opisuje zadovoljavajuću točnost i preciznost procjene gradijenata kada se podaci filtriraju linearnim Kalmanovim filtrom. Sažetak navodi simulacijske rezultate, bez brojčane pogreške procjene.",
+          "locator": "Hrvatski sveučilišni sažetak i engleski autorski sažetak",
+          "url": "https://www.researchgate.net/publication/277182393_METHOD_FOR_AERODYNAMIC_CHARACTERISTICS_MONITORING_OF_TRANSPORT_AIRCRAFT_IN_OPERATION"
+        }
+      ],
+      "slug": "2014-metoda-za-pracenje-aerodinamickih-znacajki-transportnog-zrakoplova-tijekom"
+    },
+    {
+      "title": "Praćenje stvarnih performansi zrakoplova prema podacima iz leta",
+      "year": 2014,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Karolina Krajček",
+        "Dario Nikolić"
+      ],
+      "venue": "KoREMA – Automatizacija u prometu 2014, str. 170–173",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi-api/publikacija/617123",
+      "evidence": "Sažetak",
+      "scope": "Zaseban zbornički zapis s dva autora i istim hrvatskim naslovom kao članak u Tehničkom vjesniku iz 2015.",
+      "findings": [
+        {
+          "question": "Zašto autori predlažu praćenje stvarnih performansi tijekom eksploatacije?",
+          "answer": "Sažetak povezuje moguća odstupanja stvarnih performansi od vrijednosti iz priručnika s promjenama fizikalnih svojstava zrakoplova uslijed starenja materijala i velikih opterećenja u letu pri visokim podzvučnim Machovim brojevima.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/617123"
+        },
+        {
+          "question": "Što konferencijski rad obuhvaća?",
+          "answer": "Rad pregledava postojeće načine praćenja performansi te izdvaja mogućnosti istraživanja procjene fizikalnih parametara zrakoplova u uporabi iz podataka iz leta.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/617123"
+        }
+      ],
+      "slug": "2014-pracenje-stvarnih-performansi-zrakoplova-prema-podacima-iz-leta"
+    },
+    {
+      "title": "Usporedba stvarnih karakteristika performansi zrakoplova sa objavljenim podacima",
+      "year": 2014,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Miroslav Šegvić",
+        "Karolina Krajček",
+        "Ivana Varešak"
+      ],
+      "venue": "KoREMA – Automatizacija u prometu 2014, str. 174–177",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/617124",
+      "evidence": "Sažetak",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Kako su uspoređene stvarne i nominalne performanse aviona Piper Seminole?",
+          "answer": "Autori su stvarne performanse zrakoplova Piper Seminole PA-44-180 odredili ispitivanjem ustaljenog krstarenja metodom brzine i snage (Speed Power) te ih usporedili s nominalnim vrijednostima iz letačkog priručnika.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/617124"
+        },
+        {
+          "question": "Kako su procijenili karakteristike motora bez posebne mjerne opreme?",
+          "answer": "Za procjenu karakteristika rada motora iz zapisa pokusa u letu koristili su model dobiven višestrukom regresijom proizvođačevih podataka. Prema sažetku, primijenjeni postupak nije zahtijevao posebnu opremu ni automatsko snimanje podataka.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-skup/617124"
+        }
+      ],
+      "slug": "2014-usporedba-stvarnih-karakteristika-performansi-zrakoplova-sa-objavljenim-podacima"
+    },
+    {
+      "title": "Praktična primjena metode za određivanje performansi zrakoplova u penjanju",
+      "year": 2014,
+      "type": "Rad u zborniku",
+      "authors": [
+        "Karolina Krajček",
+        "Shadi Šamle"
+      ],
+      "venue": "KoREMA – Automatizacija u prometu 2014, str. 178–181",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi-api/publikacija/617125",
+      "evidence": "Sažetak",
+      "scope": "",
+      "findings": [
+        {
+          "question": "Kako su izmjerene performanse penjanja Cessne 172N?",
+          "answer": "Autori su na Cessni 172N proveli ispitivanje metodom penjanja po zupcima na visinama po tlaku od 2.000, 4.000 i 8.000 stopa. Na svakoj visini ispitali su raspon indiciranih brzina od 50 do 65 čvorova.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/617125"
+        },
+        {
+          "question": "Kako su terenska mjerenja uspoređena s operativnim priručnikom?",
+          "answer": "Izmjerene maksimalne brzine uzdizanja preračunate su na standardne atmosferske uvjete i standardnu masu zrakoplova, pa uspoređene s vrijednostima iz operativnog priručnika (POH). Sažetak izostavlja brojčana odstupanja.",
+          "locator": "Autorski sažetak u zapisu CroRIS",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/617125"
+        }
+      ],
+      "slug": "2014-prakticna-primjena-metode-za-odredivanje-performansi-zrakoplova-u"
+    },
+    {
+      "title": "Comparative Interior Noise Measurement in a Large Transport Aircraft – Turboprop vs. Turbofans",
+      "year": 2012,
+      "type": "Konferencijski rad",
+      "authors": [
+        "Jurica Ivošević",
+        "Dubravko Miljković",
+        "Karolina Krajček"
+      ],
+      "venue": "AAAA 2012 Proceedings, 5th Congress of the Alps Adria Acoustics Association, Petrčane",
+      "doi": "",
+      "url": "https://www.researchgate.net/publication/304079770_Comparative_Interior_Noise_Measurement_in_a_Large_Transport_Aircraft_-_Turboprop_vs_Turbofans",
+      "evidence": "Puni tekst",
+      "scope": "Studija uspoređuje izmjerenu buku u pilotskim kabinama konkretnih primjeraka Airbusa A319 i Dash 8 Q400 u osam režima rada.",
+      "findings": [
+        {
+          "question": "Kako se razlikovala prosječna buka u pilotskim kabinama A319 i Dash 8 Q400?",
+          "answer": "A-ponderirana ekvivalentna razina zvuka (Lₑq) u ispitivanom A319 bila je viša ili jednaka onoj u Q400 u sedam od osam promatranih režima. Najveća razlika bila je oko 11 dB na stajanci, s ugašenim glavnim motorima i uključenim pomoćnim izvorom energije (APU). U posljednjem režimu (roll-off) Q400 bio je glasniji za oko 1 dB.",
+          "locator": "Odjeljak 3.3, slika 7",
+          "url": "https://www.academia.edu/83501718/Comparative_Interior_Noise_Measurement_in_a_Large_Transport_Aircraft_Turboprop_vs_Turbofans"
+        },
+        {
+          "question": "Kada je razlika u vršnoj buci bila najveća?",
+          "answer": "U penjanju je A-ponderirana najveća razina zvučnog tlaka (Lₘₐₓ) u ispitivanom A319 bila oko 15 dB viša nego u Q400. U spuštanju na prilazu s izvučenim podvozjem razlika je bila oko 0,1 dB.",
+          "locator": "Odjeljak 3.3, slika 8",
+          "url": "https://www.academia.edu/83501718/Comparative_Interior_Noise_Measurement_in_a_Large_Transport_Aircraft_Turboprop_vs_Turbofans"
+        },
+        {
+          "question": "Koji dio frekvencijskog spektra dominira u ta dva primjerka?",
+          "answer": "U oktavnoj analizi prevladavala je niskofrekvencijska buka u obje pilotske kabine. Za Q400 autori kao vjerojatne pojasove izraženih tonova izdvajaju oktavne pojaseve sa središtima na 63 i 125 Hz.",
+          "locator": "Odjeljak 3.3, slike 14–21",
+          "url": "https://www.researchgate.net/publication/304079770_Comparative_Interior_Noise_Measurement_in_a_Large_Transport_Aircraft_-_Turboprop_vs_Turbofans"
+        }
+      ],
+      "slug": "2012-comparative-interior-noise-measurement-in-a-large-transport"
+    },
+    {
+      "title": "Exterior Noise Analysis of a Small Training Aircraft",
+      "year": 2012,
+      "type": "Konferencijski rad",
+      "authors": [
+        "Vedran Vukić",
+        "Davor Franjković",
+        "Karolina Krajček"
+      ],
+      "venue": "AAAA 2012 Proceedings, 5th Congress of the Alps Adria Acoustics Association, Petrčane",
+      "doi": "",
+      "url": "https://www.akustika.hr/had/zbornici_aaaa_simpozija",
+      "evidence": "Puni tekst",
+      "scope": "Mjerenje vanjske buke školskog zrakoplova Diamond DV20 Katana na tlu u Varaždinu u kolovozu 2012., u osam smjerova i pri tri postavke motora.",
+      "findings": [
+        {
+          "question": "Koliku su vanjsku buku izmjerili oko školskog zrakoplova Diamond DV20 Katana?",
+          "answer": "Na tlu je A-ponderirana razina buke iznosila 73,8–84,3 dBA u praznom hodu, 92,8–102,8 dBA pri snazi krstarenja i 94,7–106,5 dBA pri maksimalnoj snazi za polijetanje. Rasponi predstavljaju vrijednosti izmjerene u različitim smjerovima oko istog zrakoplova.",
+          "locator": "Rad AIR-08 u zborniku, odjeljak 3, tablica 2",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        },
+        {
+          "question": "Kako je smjer mjerenja utjecao na razinu buke pri maksimalnoj snazi za polijetanje?",
+          "answer": "Pri maksimalnoj snazi za polijetanje najniža A-ponderirana razina bila je 94,7 dBA iza zrakoplova, a najviša 106,5 dBA u smjerovima od 270° i 315°. Smjer od 0° bio je ispred zrakoplova.",
+          "locator": "Rad AIR-08 u zborniku, odjeljak 3, tablica 2 i slika 3",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        },
+        {
+          "question": "Kako se vanjska buka Katane usporedila s ranijim mjerenjima Pipera PA-44 Seminole?",
+          "answer": "U usporedbi s ranijim mjerenjima izvedenima na sličan način, razine buke u praznom hodu za oba su zrakoplova bile oko 80 dBA. Pri snazi krstarenja i najvećoj snazi za polijetanje izmjerena buka Seminolea bila je oko 10 dBA viša.",
+          "locator": "Rad AIR-08 u zborniku, odjeljak 4, slike 3 i 5",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        }
+      ],
+      "slug": "2012-exterior-noise-analysis-of-a-small-training-aircraft"
+    },
+    {
+      "title": "Aircraft Noise Models for Trajectory Optimization During Approach Procedure",
+      "year": 2012,
+      "type": "Konferencijski rad",
+      "authors": [
+        "Karolina Krajček",
+        "Jurica Ivošević",
+        "Tino Bucak"
+      ],
+      "venue": "AAAA 2012 Proceedings, 5th Congress of the Alps Adria Acoustics Association, Petrčane",
+      "doi": "",
+      "url": "https://www.akustika.hr/had/zbornici_aaaa_simpozija",
+      "evidence": "Puni tekst",
+      "scope": "Pregled metoda i modela buke tijekom prilaza. Brojčani rezultati u odjeljku o optimizaciji potječu iz istraživanja koja rad citira.",
+      "findings": [
+        {
+          "question": "Koje dvije skupine modela buke razlikuje ovaj pregled?",
+          "answer": "Pregled razlikuje simulacijske modele, koji detaljno opisuju izvore i širenje zvuka, od integriranih ili segmentiranih modela koji koriste tablične odnose između buke, potiska i udaljenosti. Prva skupina pogodna je za analizu pojedinog zrakoplova i postupka, a druga za brže računanje kontura buke oko zračne luke.",
+          "locator": "Rad AIR-05 u zborniku, odjeljci 3.1 i 3.2",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        },
+        {
+          "question": "Koje operativne mogućnosti pregled navodi za ublažavanje buke prilaza?",
+          "answer": "Pregled opisuje prilaz s kontinuiranim spuštanjem, strmiji prilaz, pomicanje praga za slijetanje i prilaz s malim otporom i snagom. U modelima prilaza buka ovisi o potisku, aerodinamičkoj konfiguraciji, brzini i udaljenosti između zrakoplova i promatrača.",
+          "locator": "Rad AIR-05 u zborniku, odjeljak 2, slike 2 i 3",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        },
+        {
+          "question": "Koje ciljeve može objediniti optimizacija putanje prilaza?",
+          "answer": "Pregled prikazuje optimizaciju kao izbor putanje koja uravnotežuje buku, potrošnju goriva i trajanje leta, uz ograničenja konfiguracije, sigurnosti i udobnosti. Prikazani alati koriste različite funkcije cilja, među kojima su i emisije te broj stanovnika unutar zadane konture buke.",
+          "locator": "Rad AIR-05 u zborniku, odjeljak 4.4, osobito 4.4.2",
+          "url": "https://www.akustika.hr/_download/repository/Proceedings%20of%20the%205th%20Congress%20of%20the%20Alps%20Adria%20Acoustic%20Association.zip"
+        }
+      ],
+      "slug": "2012-aircraft-noise-models-for-trajectory-optimization-during-approach"
+    },
+    {
+      "title": "Application of Flight Test Technique using GPS for Position Error Assessment of Cessna 172R",
+      "year": 2012,
+      "type": "Konferencijski rad",
+      "authors": [
+        "Karolina Krajček",
+        "Diana Majić-Zec",
+        "Jurica Ivošević"
+      ],
+      "venue": "15th International Conference on Transport Science, Maritime, Transport and Logistics Science, Portorož",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi-api/publikacija/587855",
+      "evidence": "Sažetak",
+      "scope": "Letno ispitivanje položajne pogreške sustava mjerenja brzine na Cessni 172R.",
+      "findings": [
+        {
+          "question": "Kako su u letu procijenili položajnu pogrešku pri mjerenju brzine na Cessni 172R?",
+          "answer": "Na Cessni 172R primijenili su metodu letnog ispitivanja s Garminovim GPS uređajem. Metodu su odabrali zbog male potrebe za dodatnom specijaliziranom opremom.",
+          "locator": "Autorski sažetak u CroRIS-u",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/587855"
+        },
+        {
+          "question": "Koja je referentna vrijednost korištena za provjeru letnog ispitivanja?",
+          "answer": "Rezultate ispitivanja usporedili su s položajnom pogreškom izmjerenom pri certificiranju i objavljenom u priručniku za pilota (POH). Sažetak ne daje iznos ni smjer uočenog odstupanja.",
+          "locator": "Autorski sažetak u CroRIS-u",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/587855"
+        }
+      ],
+      "slug": "2012-application-of-flight-test-technique-using-gps-for"
+    },
+    {
+      "title": "Suvremeni trendovi u zrakoplovstvu",
+      "year": 2010,
+      "type": "Pregledni rad u časopisu",
+      "authors": [
+        "Karolina Krajček",
+        "Davor Franjković",
+        "Ivana Varešak"
+      ],
+      "venue": "Suvremeni promet, 30(5), 345–349",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi/publikacija/prilog-casopis/166600",
+      "evidence": "Sažetak",
+      "scope": "Rad sažima razvojne prioritete europskog zrakoplovstva u kontekstu 2010. godine. CroRIS bilježi i njegovo izlaganje na skupu Prometni sustavi 2010.",
+      "findings": [
+        {
+          "question": "Koje su operativne ciljeve autori izdvojili za europski zračni promet?",
+          "answer": "Autori ističu povećanje kapaciteta, sigurnosti i točnosti, kraće čekanje, manje kašnjenja i otkazivanja te smanjenje operativnih troškova. Kao mjere navode razvoj postupaka i bolje povezivanje zračnog prometa s drugim načinima prijevoza.",
+          "locator": "Autorski sažetak u CroRIS-u, rad na str. 345–349",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-casopis/166600"
+        },
+        {
+          "question": "Kako pregled iz 2010. opisuje okolišne ciljeve zrakoplovstva?",
+          "answer": "Uz smanjenje emisija i buke autori ističu optimizaciju cijelog životnog vijeka zrakoplova, od projektiranja do recikliranja. To su ciljevi koje pregled navodi u kontekstu programa održivog razvoja u EU-u.",
+          "locator": "Autorski sažetak u CroRIS-u, rad na str. 345–349",
+          "url": "https://www.croris.hr/crosbi/publikacija/prilog-casopis/166600"
+        }
+      ],
+      "slug": "2010-suvremeni-trendovi-u-zrakoplovstvu"
+    },
+    {
+      "title": "Proračun normalne sile i momenta propinjanja kombinacije tijelo-krilo",
+      "year": 2007,
+      "type": "Diplomski rad",
+      "authors": [
+        "Karolina Krajček"
+      ],
+      "venue": "Sveučilište u Zagrebu, Fakultet strojarstva i brodogradnje, 51 str.",
+      "doi": "",
+      "url": "https://www.croris.hr/crosbi-api/publikacija/356218",
+      "evidence": "Sažetak",
+      "scope": "Numerički diplomski rad. Poveznica na cjelovit rad u starom repozitoriju FSB-a nije bila dostupna pri provjeri.",
+      "findings": [
+        {
+          "question": "Kako metoda VID računa normalnu silu i moment propinjanja kombinacije tijela i krila?",
+          "answer": "Rad spaja Weissingerovu vrtložnu metodu za krilo s metodom izvora i dipola za tijelo. Iz rubnog uvjeta nepropusnosti određuje jačine tih elemenata, a iz lokalne brzine strujanja Bernoullijevom jednadžbom računa raspodjelu tlaka i aerodinamičke koeficijente.",
+          "locator": "Autorski sažetak u CroRIS-u",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/356218"
+        },
+        {
+          "question": "Kako je numerički proračun uspoređen s drugim metodama?",
+          "answer": "Proračun je izveden u MATLAB-u. Normalna sila i moment propinjanja za zadanu geometriju uspoređeni su s rezultatima drugih numeričkih metoda za istu konfiguraciju, iz materijala radionice AIAA. Sažetak ne navodi veličinu razlike među metodama.",
+          "locator": "Autorski sažetak u CroRIS-u",
+          "url": "https://www.croris.hr/crosbi-api/publikacija/356218"
+        }
+      ],
+      "slug": "2007-proracun-normalne-sile-i-momenta-propinjanja-kombinacije-tijelo"
+    }
+  ]
+}
